@@ -50,7 +50,6 @@ void Menu(void)
   gotoxy(1,1);
 
 
-
   while(ch!=27)
   {
    ch = getch();

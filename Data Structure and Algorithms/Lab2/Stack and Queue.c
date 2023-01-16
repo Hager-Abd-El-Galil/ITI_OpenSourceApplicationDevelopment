@@ -21,8 +21,8 @@ struct Node *pHead;
 
 struct Student ar[10];
 
-int TOQ;
-int TOS;
+int TOQ;  //Top of Queue
+int TOS;  //Top of Stack
 
 void Menu(void);
 struct Student FillStudent(void);

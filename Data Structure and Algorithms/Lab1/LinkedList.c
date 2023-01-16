@@ -20,7 +20,6 @@ struct Node
 struct Node *pHead;
 struct Node *pTail;
 
-
 void Menu(void);
 struct Student FillStudent(void);
 struct Node* CreateNode(struct Student s);

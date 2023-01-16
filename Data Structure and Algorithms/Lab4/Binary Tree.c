@@ -19,8 +19,7 @@ void PostOrder(struct Node* root);
 
 int main()
 {
-
-  Menu();
+   Menu();
 
  return 0;
 }
