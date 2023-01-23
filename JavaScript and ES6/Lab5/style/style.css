@@ -1,0 +1,36 @@
+*{
+    margin-top: 0;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border:solid thin black;
+    width: 50%;
+    margin: 2%;
+    padding-bottom: 1%;
+}
+.btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+button:hover
+{
+    cursor: pointer;
+    background-color: rgb(172, 215, 255);
+    border: solid white thin;
+}
+h2{
+    text-align: center;
+    color:aliceblue;
+    background-color:rgb(172, 215, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
