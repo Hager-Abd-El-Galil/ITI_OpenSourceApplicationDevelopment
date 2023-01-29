@@ -1,0 +1,28 @@
+.text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border:solid thin black;
+    width: 40%;
+    padding: 2%;
+    margin-left: 30%;
+}
+label{
+    font-size: medium;
+    font-weight: bold;
+    margin: 1%;
+}
+#red{
+    margin-left: 5%;
+}
+#green{
+    margin-left: 2.5%;
+}
+#blue{
+    margin-left: 4.5%;
+}
+#color-range{
+    border:solid thin black;
+    width: fit-content;
+    padding: 1%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Control Range Task</title>
+    <link rel="stylesheet" href="./style/textColorRange.css">
+</head>
+<body>
+    <div class="text-container">
+        <form>
+            <label style="color: red;">Red</label><input type="range" id="red" name="red" min="0" max="255" value="0"><br>
+            <label style="color: green;">Green</label><input type="range" id="green" name="green" min="0" max="255" value="0"><br>
+            <label style="color: blue;">Blue</label><input type="range" id="blue" name="blue" min="0" max="255" value="0"><br>
+        </form>
+        
+        <h3>
+            Change The 3 Color Ranges above and Observe my Color Change.
+        </h3>
+        <span id="color-range">rgb(0,0,0)</span>
+    </div>
+    <script>
+        var red = document.getElementById("red");
+        var green = document.getElementById("green");
+        var blue = document.getElementById("blue");
+       
+        red.addEventListener("change", function () {
+            var textcolor = "rgb(" + red.value + "," + green.value + "," + blue.value + ")"; 
+            document.querySelector("h3").style.color = textcolor;
+            document.getElementById("color-range").innerHTML = textcolor;
+       }); 
+       green.addEventListener("change", function () {
+            var textcolor = "rgb(" + red.value + "," + green.value + "," + blue.value + ")"; 
+            document.querySelector("h3").style.color = textcolor;
+            document.getElementById("color-range").innerHTML = textcolor;
+       });
+       blue.addEventListener("change", function () {
+            var textcolor = "rgb(" + red.value + "," + green.value + "," + blue.value + ")"; 
+            document.querySelector("h3").style.color = textcolor;
+            document.getElementById("color-range").innerHTML = textcolor;
+       });
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Task</title>
+    <link rel="stylesheet" href="./style/canvas.css">
+</head>
+<body>
+    <canvas
+        width="500" height="500" style="border:3px solid black " id="can"></canvas>
+    </canvas>
+    <script>
+        var x = 0;
+        var y = 0;
+        var can = document.getElementById("can");
+        var ctx = can.getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0,0);
+        var timeInterval = setInterval(function(){
+            if(x === can.width && y === can.height)
+            {
+                clearInterval(timeInterval);
+                alert("Animation End!");
+            }
+            else
+            {
+                x += 50;
+                y += 50;
+                ctx.lineTo(x,y);
+                ctx.strokeStyle = "red";
+                ctx.lineWidth = "5"
+                ctx.stroke();
+            }
+            
+        }, 500);
+        
+        ctx.closePath();
+    </script>
+
+</body>
+</html>

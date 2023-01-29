@@ -1,0 +1,38 @@
+.button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+#hover-btn{
+    width: 250px;
+    padding: 0.7%;
+    border-radius: 100px;
+    background-color: rgb(195, 195, 255);
+    border:solid thin blue;
+}
+#hover-btn:hover{
+  cursor: pointer;
+  background-color: rgb(249, 225, 229); 
+  animation-name: myanim;
+  animation-duration: 0.7s;
+  animation-direction:alternate;
+  animation-delay: 0.1s;
+  animation-timing-function: 0.1s ;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+@keyframes myanim {
+    0% {
+        box-shadow: 0px 0px 5px 15px  rgb(195, 195, 255); 
+    }
+    25% {
+        box-shadow: 0px 0px 5px 10px  rgb(195, 195, 255);
+        
+    }
+    50% {
+        box-shadow: 0px 0px 5px 5px  rgb(195, 195, 255);  
+    }
+    100% {
+        box-shadow: 0px 0px 5px 1px  rgb(195, 195, 255);
+    }
+}

@@ -1,0 +1,54 @@
+@import "./validationForm.css";
+@import "./imageOpacity.css";
+@import "./buttonAnimation.css";
+
+*{
+    margin-top: 0;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container > div{
+    border:solid thin black;
+    width: 50%;
+    margin: 2%;
+    margin-left: 25%;
+    padding-bottom: 1%;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.item-1 , .item-2 ,.item-3{
+    text-align: center;
+    margin: 1%;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+button{
+    width: 150px;
+    padding: 0.5%;
+    margin: 1%;
+    border: solid thin white;
+    font-size: small;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;  
+}
+button:hover{
+    border: solid thin black;
+    cursor: pointer;
+}
+h2{
+    text-align: center;
+    color:aliceblue;
+    background-color:rgb(172, 215, 255);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

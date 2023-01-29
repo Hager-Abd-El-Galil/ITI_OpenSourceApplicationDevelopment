@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Controls Task</title>
+    <link rel="stylesheet" href="./style/videoControls.css">
+</head>
+<body>
+    <div class="video-cointainer">
+        <video 
+            src="./Resources/video/frozen.mp4" 
+            width="530px" 
+            poster="./Resources/images/frozen.jpg" 
+            id="vid">
+        </video>
+        <br>
+        <form>
+            <input type="range" id="videoRange" min="0" max ="110.503764" style="width: 530px;" value="0">
+            <span id="video-time">0.00 / 0.00</span><br>
+            <button id="video-play" type="button" onclick="play()">Play</button>
+            <button id="video-stop" type="button" onclick="stop()">Stop</button>
+            <button id="video-start" type="button" onclick="videoStart()"><<</button>
+            <button id="video-back-speed" type="button" onclick="backSpeed()"><</button>
+            <button id="video-forward-speed" type="button" onclick="forwardSpeed()">></button>
+            <button id="video-end" type="button" onclick="videoEnd()">>></button>
+            <input type="range" id="volumeRange" min="0" max="1" step="0.1" value="0.5">
+            <button id="video-mute" type="button" onclick="mute()">mute</button><br>
+            <label>Speed:</label><input type="range" id="speedRange" min="0.5" step="0.5" max="16" value="1">
+            <button id="video-fullscreen" type="button" onclick="fullscreen()">full screen</button>
+        </form>
+    </div>
+    <script>
+        var vid = document.getElementById("vid");
+        var volumeRange = document.getElementById("volumeRange");
+        var speedRange = document.getElementById("speedRange");
+        /*----------play button----------*/
+        function play(){
+            vid.play();
+        }
+        /*----------stop button----------*/
+        function stop(){
+            vid.pause();
+        }
+        /*----------play range----------*/
+        vid.addEventListener("timeupdate", function () {
+            videoRange.value = vid.currentTime;
+            document.getElementById("video-time").innerHTML = parseFloat(vid.currentTime/60).toFixed(2) + " / " +parseFloat(vid.duration/60).toFixed(2);
+       });
+       /*----------speed buttons----------*/
+       function videoStart() {
+            vid.currentTime = 0;
+       }
+       function backSpeed() {
+            if(vid.currentTime >= 1)
+            {
+                vid.currentTime = vid.currentTime - 1;
+            }
+            else{
+                vid.currentTime = 0;
+            }
+       }
+       function forwardSpeed() {
+            if((vid.currentTime + 1) <= vid.duration)
+            {
+                vid.currentTime = vid.currentTime + 1;
+            }
+            else{
+                vid.currentTime = vid.duration;
+            }
+       }
+       function videoEnd() {
+            vid.currentTime = vid.duration;
+       }
+       /*----------volume range----------*/
+       volumeRange.addEventListener("change", function () {
+          vid.volume = volumeRange.value;
+          console.log("volume: ",vid.volume);
+       });   
+       /*----------mute button----------*/
+       function mute(){
+        if(vid.volume != 0)
+        {
+            vid.volume = 0;
+        }
+        else
+        {
+            vid.volume = volumeRange.value;
+        }
+       }
+       /*----------speed range----------*/
+       speedRange.addEventListener("change", function () {
+          vid.playbackRate = speedRange.value;
+          console.log("speed: ",vid.playbackRate);
+       });
+       /*----------full screen button----------*/
+       function fullscreen() 
+       {
+            if (vid.requestFullscreen) {
+                vid.requestFullscreen();
+            }
+            else if (vid.webkitRequestFullscreen) 
+            { 
+                vid.webkitRequestFullscreen();
+            } 
+            else if (vid.msRequestFullscreen) 
+            { 
+                vid.msRequestFullscreen();
+            }
+        }
+    </script>
+</body>
+</html>

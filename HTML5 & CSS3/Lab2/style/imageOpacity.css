@@ -1,0 +1,15 @@
+.img-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+.trans{
+    border:solid thin white;
+    border-radius: 50%;
+    transition: all 4s;
+    transition-timing-function: ease-in-out; 
+}
+.trans:hover{
+    opacity: 0;
+    cursor: pointer;
+}
