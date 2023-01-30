@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Worker Task</title>
+    <link rel="stylesheet" href="./style/webWorker.css">
+</head>
+<body>
+    <span id="sum"> Sum from 0 to 100000<br></span>
+    <button id="sum-btn">Sum</button>
+    <button id="theme-btn" onclick="changeTheme()">Change Theme</button>
+    <script>
+       var worker = new Worker("./js/worker.js");
+       var count = document.getElementById("sum-btn");
+
+       count.onclick = function(){
+            worker.postMessage("");
+       } 
+       worker.onmessage = function(message){
+       console.log(message);
+       document.querySelector("#sum").innerHTML = "Result: " + message.data;
+       }
+       
+       function changeTheme(){
+        if(document.body.style.background !== "white")
+        {
+            document.body.style.background = "white";
+        }
+        else{
+            document.body.style.background = "rgb(247, 211, 211)";
+        }
+       }
+    </script>
+</body>
+</html>

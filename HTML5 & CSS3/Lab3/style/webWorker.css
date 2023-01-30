@@ -1,0 +1,28 @@
+#sum{
+    display: block;
+    width:20%;
+    height:100px;
+    border:solid thin black;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    padding-top: 75px;
+    text-align: center;
+}
+#theme-btn{
+    width: 10%;
+    padding: 0.25%;
+    background-color:rgb(222, 222, 255);
+    border:solid thin blue;
+    margin-left: 0.5%;
+}
+#theme-btn:hover,#sum-btn:hover{
+    cursor: pointer;
+    border: hidden;
+}
+#sum-btn{
+    width: 10%;
+    padding: 0.25%;
+    background-color:rgb(222, 222, 255);
+    border:solid thin blue;
+    margin-left: 40%;
+}

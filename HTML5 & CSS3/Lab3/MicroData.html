@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroData Task</title>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Micro Data</h1>
+    <img src="./Resources/images/organization.PNG" alt="Organization.png">
+    <img src="./Resources/images/address.PNG" alt="Address.png">
+    <img src="./Resources/images/Geo.PNG" alt="Geo.png">
+    <div itemscope itemtype="https://schema.org/Organization">
+       <p itemprop="name">SD & Gaming COE,ITI</p>
+       <p itemprop="telephone">35355695</p>
+       <p itemprop="url">http://www.iti.gov.eg/</p>
+    </div>
+    <div itemscope itemtype="https://schema.org/address">
+        <p itemprop="street-address">Km 28 Cairo-Alexandria Desert Road</p>
+        <p itemprop="locality">Smart Village</p>
+        <p itemprop="region">Giza</p>
+        <p itemprop="country-name">Egypt</p>
+        <p itemprop="postal-code">11371</p>
+    </div>
+    <div itemscope itemtype="https://schema.org/GeoCoordinates">
+        <p itemprop="latitude">38.5323N</p>
+        <p itemprop="longitude">77.0040W</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Task</title>
+    <link rel="stylesheet" href="./style/welcome.css">
+</head>
+<body>
+    <span id="welcome-text"></span>
+    <script>
+        var username = localStorage.getItem("Username");
+        var email = localStorage.getItem("Email");
+        console.log(username,email)
+        document.querySelector("#welcome-text").innerHTML = "Welcome \"" + username + "\" ,Your Email Address is \"" + email + "\"";
+
+    </script>
+</body>
+</html>

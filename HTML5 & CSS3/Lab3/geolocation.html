@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation Task</title>
+</head>
+<body>
+    <script>
+        navigator.geolocation.getCurrentPosition(showLocation,showError,showOptions);
+        
+        function showLocation(loc)
+        {
+           var longitude = loc.coords.longitude;
+           var latitude = loc.coords.latitude;
+           location.assign("http://maps.google.com/maps?q" + latitude + ",+" + longitude);
+        }
+        
+        function showError(err)
+        {
+           switch(err.code) 
+           {
+                case 0:
+                    alret("Unknown Error!");
+                    console.log("Unknown Error: ",err.message);
+                    break;
+                case 1:
+                    alret("Permission Denied Error!");
+                    console.log("Permission Denied Error: ",err.message);
+                    break;
+                case 2:
+                    alret("Position Unavailable Error!");
+                    console.log("Position Unavailable Error: ",err.message);
+                    break;
+                case 3:
+                    alret("Timedout Error!");
+                    console.log("Timedout Error: ",err.message);
+                    break;
+           }
+        }
+
+        var showOptions = {
+            enableHighAccuracy : true,
+            timeout : 1000,
+            maximumAge : 0
+        }
+    </script>
+</body>
+</html>

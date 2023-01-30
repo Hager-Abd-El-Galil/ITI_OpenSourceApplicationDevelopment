@@ -1,0 +1,23 @@
+
+input[type = text]:invalid ,
+input[type = email]:invalid{
+    border:solid thin red;
+    border-width: 2px;
+}
+input[type = text]:valid ,
+input[type = email]:valid{
+    border:solid thin green;
+    border-width: 2px;
+    margin-bottom: 2%;
+}
+input[type = text]:focus ,
+input[type = email]:focus{
+    outline: none;
+}
+input[type = text]:valid + #username ,
+input[type = email]:valid + #email{
+    display: none;
+}
+.submit-btn:hover{
+    cursor: pointer;
+}
