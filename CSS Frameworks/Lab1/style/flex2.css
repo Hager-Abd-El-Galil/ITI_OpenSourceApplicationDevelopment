@@ -1,0 +1,13 @@
+.main-cointainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:solid thick black;
+    padding: 20.5%;
+}
+.main-cointainer .item{
+    border:solid thick orangered;
+    text-align: left;
+    padding-bottom: 5%;
+    padding-right: 10%;
+}

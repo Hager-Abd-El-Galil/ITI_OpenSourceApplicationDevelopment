@@ -1,0 +1,83 @@
+body{
+    margin:0%;
+}
+@media (min-width :400.1px) {
+    .main-cointainer{
+        display: grid;
+        grid-template-areas: 
+            "HEADER HEADER HEADER"
+            "SIDENAV MAINCONTENT SIDEBAR"
+            "SIDENAV MAINCONTENT SIDEBAR"
+            "SIDENAV MAINCONTENT SIDEBAR"
+            "SIDENAV MAINCONTENT SIDEBAR"
+            "SIDENAV MAINCONTENT SIDEBAR"
+            "FOOTER FOOTER FOOTER";
+        color: white; 
+        text-align: center;   
+        height: 100vh;
+    }
+    .main-cointainer > div{
+        padding-top: 4.5%;
+        margin: 0.1%;
+    }
+    .main-cointainer .child-1{
+        grid-area: HEADER;
+        background-color: rgb(116, 116, 188);
+    }
+    .main-cointainer .child-2{
+        grid-area: SIDENAV;
+        background-color: rgb(215, 120, 57);
+    }
+    .main-cointainer .child-3{
+        grid-area: MAINCONTENT;
+        background-color: rgb(79, 197, 58);
+    }
+    .main-cointainer .child-4{
+        grid-area: SIDEBAR;
+        background-color: rgb(215, 120, 57);
+    }
+    .main-cointainer .child-5{
+        grid-area: FOOTER;
+        background-color: rgb(116, 116, 188);
+    }
+}
+
+@media (max-width:400px){
+    .main-cointainer{
+        display: grid;
+        grid-template-areas: 
+            "HEADER"
+            "SIDENAV"
+            "MAINCONTENT"
+            "SIDEBAR"
+            "FOOTER";
+        color: white; 
+        text-align: center;   
+    
+    }
+    .main-cointainer > div{
+        padding: 10%;
+        margin: 0.1%;
+    }
+    .main-cointainer .child-1{
+        grid-area: HEADER;
+        background-color: rgb(116, 116, 188);
+    }
+    .main-cointainer .child-2{
+        grid-area: SIDENAV;
+        background-color: rgb(215, 120, 57);
+    }
+    .main-cointainer .child-3{
+        grid-area: MAINCONTENT;
+        background-color: rgb(79, 197, 58);
+    }
+    .main-cointainer .child-4{
+        grid-area: SIDEBAR;
+        background-color: rgb(215, 120, 57);
+    }
+    .main-cointainer .child-5{
+        grid-area: FOOTER;
+        background-color: rgb(116, 116, 188);
+    }
+    
+}

@@ -1,0 +1,161 @@
+@media (min-width:950.1px) {
+    .body{
+        margin:0%;
+        background-color: rgb(116, 116, 188); 
+    }
+    .main-cointainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15%;
+    }
+    .sub-cointainer{
+        display: grid;
+        grid-template-areas: 
+            "one two two"
+            "one three four"
+            "five five four";
+        color: white;
+        width: 20rem;
+        height: 20rem;
+        animation: rotation 10s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(45deg);
+        }
+        to {
+          transform: rotate(404deg);
+        }
+      }
+    .sub-cointainer > div{
+        padding: 3%;
+        margin: 1%;
+        text-align: center; 
+        background-color: rgb(33, 33, 33)
+    }
+    .main-cointainer .sub-cointainer .child-1{
+        grid-area: one;
+    }
+    .main-cointainer .sub-cointainer .child-2{
+        grid-area: two;
+    }
+    .main-cointainer .sub-cointainer .child-3{
+        grid-area: three;
+    }
+    .main-cointainer .sub-cointainer .child-4{
+        grid-area: four;
+    }
+    .main-cointainer .sub-cointainer .child-5{
+        grid-area: five;
+    }  
+}
+@media (min-width:600.1px) and (max-width:950px) {
+    .body{
+        margin:0%;
+        background-color: rgb(116, 116, 188); 
+    }
+    .main-cointainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30%;
+    }
+    .sub-cointainer{
+        display: grid;
+        grid-template-areas: 
+            "one two two"
+            "one three four"
+            "five five four";
+        color: white;
+        width: 17rem;
+        height: 17rem;
+        animation: rotation 10s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(45deg);
+        }
+        to {
+          transform: rotate(404deg);
+        }
+      }
+    .sub-cointainer > div{
+        padding: 3%;
+        margin: 1%;
+        text-align: center; 
+        background-color: rgb(33, 33, 33)
+    }
+    .main-cointainer .sub-cointainer .child-1{
+        grid-area: one;
+    }
+    .main-cointainer .sub-cointainer .child-2{
+        grid-area: two;
+    }
+    .main-cointainer .sub-cointainer .child-3{
+        grid-area: three;
+    }
+    .main-cointainer .sub-cointainer .child-4{
+        grid-area: four;
+    }
+    .main-cointainer .sub-cointainer .child-5{
+        grid-area: five;
+    }  
+}
+
+@media (max-width:600px){
+    
+    .body{
+        margin:0%;
+        background-color: rgb(116, 116, 188); 
+    }
+    .main-cointainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50%;
+    }
+    .sub-cointainer{
+        display: grid;
+        grid-template-areas: 
+            "one two two"
+            "one three four"
+            "five five four";
+        color: white;
+        width: 12rem;
+        height: 12rem;
+        animation: rotation 10s infinite linear;
+    }
+    @keyframes rotation {
+        from {
+          transform: rotate(45deg);
+        }
+        to {
+          transform: rotate(404deg);
+        }
+      }
+    .sub-cointainer > div{
+        padding: 3%;
+        margin: 1%;
+        text-align: center; 
+        background-color: rgb(33, 33, 33)
+    }
+    .main-cointainer .sub-cointainer .child-1{
+        grid-area: one;
+    }
+    .main-cointainer .sub-cointainer .child-2{
+        grid-area: two;
+    }
+    .main-cointainer .sub-cointainer .child-3{
+        grid-area: three;
+    }
+    .main-cointainer .sub-cointainer .child-4{
+        grid-area: four;
+    }
+    .main-cointainer .sub-cointainer .child-5{
+        grid-area: five;
+    }
+}
