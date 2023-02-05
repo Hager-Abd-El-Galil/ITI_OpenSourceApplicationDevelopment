@@ -6,8 +6,8 @@ Lab1: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/
 Lab2: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/HTML5%20&%20CSS3/Lab2 <br/>
 Lab3: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/HTML5%20&%20CSS3/Lab3 <br/>
 #### CSS Frameworkes
-Lab1: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/CSS%20Frameworkes/Lab1 <br/>
-Lab2: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/CSS%20Frameworkes/Lab2 <br/>
+Lab1: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/CSS%20Frameworks/Lab1 <br/>
+Lab2: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/CSS%20Frameworks/Lab2 <br/>
 #### JavaScript and ES6
 Lab1: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab1 <br/>
 Lab2: https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab2 <br/>
