@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogIn Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class= "form-container">
+            <form id="validation-form">
+                <input type="text" id="input-username" name="username" placeholder="Username" pattern="[A-Za-z]{1,15}" autocomplete="off" required>
+                <br>
+                <input type="password" id="input-password" name="password" placeholder="Password" autocomplete="off" required>
+                <br>
+                <input id="submit-btn" type="submit" value="LOGIN">
+                <p class="paragraph">Not registered? <a class ="link" href="">Create an account</a></p>
+            </form>     
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
