@@ -19,7 +19,7 @@ form.addEventListener('submit',function(event){
 
     var name = document.createElement("div");
     newElem.appendChild(name);
-    name.classList.add('col-12', 'col-md-8', 'col-lg-10','taskName');
+    name.classList.add('col-12', 'col-md-8', 'col-lg-10','fs-4','taskName');
     name.innerText = newTask.value;
 
     var correct = document.createElement("div");
