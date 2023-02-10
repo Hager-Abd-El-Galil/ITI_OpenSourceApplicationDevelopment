@@ -1,0 +1,65 @@
+.body{
+    background-image: linear-gradient(to right,#8e9eab,#eef2f3);
+}
+.container-image-slider{
+    position: relative;
+}
+.container-image-slider .slider-title{
+    text-align: center;
+    font-family: 'Lobster', cursive;  
+}
+
+.Slides{
+    margin-left: 23%;
+}
+ 
+.prev, .next {
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-left: 23%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s all ease;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(255,255,255,0.3);
+    color:black; 
+  }
+  
+.next {
+    right: 23.1%;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Resources/images/imageSlider/icon.png">
+    <title>Winnie The Pooh | Slide Show</title>
+    <link href= style/imageSlider.css  rel="stylesheet">
+</head>
+<body class="body">
+    <div class="container-image-slider">
+
+        <!--Slider Title-->
+        <div class="slider-title">
+            <h1>" Winnie The Pooh "<br>Slide Show</h1>
+        </div>
+
+        <!--Full Width Images -->
+        <div class="Slides fade">
+            <img src="./Resources/images/imageSlider/image1.jpg" alt="image-1" style="width:70%">
+        </div>
+
+        <div class="Slides fade">
+            <img src="./Resources/images/imageSlider/image2.jpg" alt="image-2" style="width:70%">
+        </div>
+
+        <div class="Slides fade">
+            <img src="./Resources/images/imageSlider/image3.jpg" alt="image-3" style="width:70%">
+        </div>
+
+        <div class="Slides fade">
+            <img src="./Resources/images/imageSlider/image4.jpg" alt="image-4" style="width:70%">
+        </div>
+
+        <div class="Slides fade">
+            <img src="./Resources/images/imageSlider/image5.jpg" alt="image-5" style="width:70%">
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    <script src="js/imageSlider.js"></script>
+</body>
+</html>

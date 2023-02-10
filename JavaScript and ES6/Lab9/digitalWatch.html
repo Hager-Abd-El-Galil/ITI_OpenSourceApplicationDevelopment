@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Resources/images/digitalWatch/icon.svg">
+    <title>Digital Watch</title>
+    <link href= "/style/digitalWatch.css"  rel="stylesheet">
+</head>
+<body class="body">
+    <div id="container-digital-watch">
+        <div id="watch-container">
+            <div id="days">
+                <span class="day">MON</span>
+                <span class="day">TUE</span>
+                <span class="day">WES</span>
+                <span class="day">THU</span>
+                <span class="day">FRI</span>
+                <span class="day">SAT</span>
+                <span class="day">SUN</span>
+             </div>
+
+            <div id="watch"></div>
+            <img id="alarmIcon" src="./Resources/images/digitalWatch/alarm.svg" alt="alarm">
+        </div>
+    </div>
+    <div class="paragraph">Digital Clock</div>
+    
+    <div id="container-alarm">
+        <button id="cancel-btn">x</button>
+        <div id="alarm">
+            <h1>SET ALARM AFTER</h1>
+            <div id="timer">
+                <div class="time">HOURS
+                    <br><input id="hours" type="number" value = 0>
+                </div>
+                <div class="time">MINUTES
+                    <br><input id="minutes" type="number" value = 0>
+                </div>
+                <div class="time">SECONDS
+                    <br><input id="seconds" type="number" value = 0>
+                </div>
+            </div>
+            <button id="set-btn">SET</button>
+            <button id="clear-btn">CLEAR</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    
+
+    <script src="js/digitalWatch.js"></script>
+</body>
+</html>
