@@ -17,3 +17,4 @@
 [Lab5](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab5) <br/>
 [Lab6](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab6) <br/>
 [Lab7](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab7) <br/>
+[Lab8](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab8) <br/>
