@@ -19,3 +19,5 @@
 [Lab7](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab7) <br/>
 [Lab8](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab8) <br/>
 [Lab9](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab9) <br/>
+#### JavaScript Library (jQuery)
+[Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20Library%20(jQuery)/Lab1) <br/>
