@@ -1,0 +1,44 @@
+.body{
+    background-image: linear-gradient(#8e9eab,#eef2f3);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+h1{
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 4%;
+}
+.slider-container{
+    display:flex;
+    justify-content: center; 
+}
+.image-slide{
+    display:none;
+    margin: 3%;
+}
+.image-slide img{
+    border-radius:15px;
+}
+.active{
+    display: block;
+}
+.stop-btn{
+    display:flex;
+    justify-content: center; 
+}
+.stop-btn button{
+    width: 25%;
+    padding: 1%;
+    font-size: large;
+    background-color: rgb(151, 151, 241);
+    border: hidden ;
+    color: white;
+    border-radius:10px;
+    font-weight: bold;
+}
+.stop-btn button:hover{
+    cursor:pointer;
+    opacity: 0.7;
+}
+
