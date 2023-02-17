@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Resources/images/Todolist-Icon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+        crossorigin="anonymous"
+    >
+    <title>To Do List</title>
+
+    <style>
+        body{
+            background-color: #e2ded9;
+        }
+        .done{
+            background-color : #abf7b1;
+            text-decoration: line-through;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="padding: 3%;">
+        <!--Task Container-->
+        <div class="container rounded-4 col-8 col-lg-6 p-5" style="background-image: linear-gradient(#486072,#d1d2d2);"> 
+            <!--All Tasks-->   
+            <div id="newTask-container" class="container">
+                <div class="row justify-content-center col-7 text-center mb-3" style="margin-left:20% ;">
+                    <img src="./Resources/images/todo-image.png" alt="image">
+                    <h1>TO DO LIST...</h1>
+                </div>
+                <div class="list row justify-content-between col-12 py-3 rounded-2 my-3">
+                   
+                </div>
+            </div>
+
+            <!--Add New Task-->
+            <div class="container">
+                <hr>
+                <form id="form" class="row justify-content-center col-12 ">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-6">
+                        <input type="text" class="form-control" id="input-newTask" placeholder="Task Name" required>
+                    </div>
+                    <div class="col-8 col-sm-2 mt-3 mt-sm-0">
+                        <button id="add-btn" type="submit" class="btn btn-primary">ADD</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+        crossorigin="anonymous"
+    ></script>
+</body>
+</html>
