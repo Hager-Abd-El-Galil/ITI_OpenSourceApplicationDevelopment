@@ -19,5 +19,9 @@
 [Lab7](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab7) <br/>
 [Lab8](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab8) <br/>
 [Lab9](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab9) <br/>
+WorkShop <br/>
+- [TO-DO-LIST](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/WorkShop/TO%20DO%20LIST) <br/>
+- [Validation-Form-LogIn](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/WorkShop/Simple%20Form%20LogIn) <br/>
+- [Fetch-Data-From-URL](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/WorkShop/Fetch%20Data) <br/>
 #### JavaScript Library (jQuery)
 [Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20Library%20(jQuery)/Lab1) <br/>
