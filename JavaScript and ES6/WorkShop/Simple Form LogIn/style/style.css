@@ -1,0 +1,164 @@
+@media (min-width:900.99px) {
+    body{
+        margin:0%;
+        background-color: rgb(73, 192, 71)
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+    }
+    .container .form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 20%;
+        background-color:white;
+        padding: 5%;
+        border: solid thin white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+    .alert{
+        display: none;
+        font-size: 14px;
+        margin-left: 2%;
+    }
+    .container .form-container #input-email, 
+    .container .form-container #input-password{
+        background-color:rgb(242, 239, 239);
+        width: 85%;
+        margin-top: 3%;
+        padding: 8%;
+        border:solid thin white;
+        border-radius:5px;
+    }
+    .container .form-container #input-email:focus , 
+    .container .form-container #input-password:focus{
+        outline: none;
+    }
+    .container .form-container #input-email:focus + .alert, 
+    .container .form-container #input-password:focus + .alert{
+        outline: none;
+        display: block;
+    }
+    .container .form-container #input-email:invalid, 
+    .container .form-container #input-password:invalid{
+        border:solid thin red;
+    }
+    .container .form-container #input-email:valid, 
+    .container .form-container #input-password:valid{
+        border:solid medium green
+    }
+    .container .form-container #input-email:valid + .alert, 
+    .container .form-container #input-password:valid + .alert{
+        display: none;
+    }
+    .container .form-container #submit-btn{
+        background-color: rgb(73, 192, 71);
+        color: white;
+        width:85%;
+        margin-left: 8%;
+        margin-top: 5%;
+        padding: 5%;
+        border: solid thin white;
+        border-radius: 5px;
+    }
+    .container .form-container #submit-btn:hover{
+        cursor: pointer;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    a{
+        color:rgb(73, 192, 71);
+    } 
+}
+
+@media (max-width:900px) {
+    body{
+        margin:0%;
+        background-color: rgb(73, 192, 71)
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+    }
+    .container .form-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        background-color:white;
+        padding: 5%;
+        border: solid thin white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+    .container .form-container #input-username, .container .form-container #input-password{
+        background-color:rgb(242, 239, 239);
+        width: 85%;
+        padding: 8%;
+        border:solid thin white;
+        border-radius:5px;
+    }
+    .alert{
+        display: none;
+        margin-left: 2%;
+        font-size: small;
+    }
+    .container .form-container #input-email, 
+    .container .form-container #input-password{
+        background-color:rgb(242, 239, 239);
+        width: 85%;
+        margin-top: 3%;
+        padding: 8%;
+        border:solid thin white;
+        border-radius:5px;
+    }
+    .container .form-container #input-email:focus, 
+    .container .form-container #input-password:focus{
+        outline: none;
+    }
+    .container .form-container #input-email:focus + .alert, 
+    .container .form-container #input-password:focus + .alert{
+        outline: none;
+        display: block;
+    }
+    .container .form-container #input-email:invalid, 
+    .container .form-container #input-password:invalid{
+        border:solid thin red;
+    }
+    .container .form-container #input-email:valid, 
+    .container .form-container #input-password:valid{
+        border:solid thin green
+    }
+    .container .form-container #input-email:valid + .alert, 
+    .container .form-container #input-password:valid + .alert{
+        display: none;
+    }
+    .container .form-container #submit-btn{
+        background-color: rgb(73, 192, 71);
+        color: white;
+        width:85%;
+        margin-left: 8%;
+        margin-top: 5%;
+        padding: 5%;
+        border: solid thin white;
+        border-radius: 5px;
+    }
+    .container .form-container #submit-btn:hover{
+        cursor: pointer;
+    }
+    .paragraph{
+        text-align: center;
+    }
+    a{
+        color:rgb(73, 192, 71);
+    } 
+}

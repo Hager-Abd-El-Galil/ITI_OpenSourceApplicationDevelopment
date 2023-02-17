@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | LogIn</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class= "form-container">
+            <form id="validation-form">
+                <input type="email" id="input-email" name="email" placeholder="Email" pattern="[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,4}$" autocomplete="off" required>
+                <p class="alert">The required email address may not include any special characters other than the '@' sign</p>
+                <br>
+                <input type="password" id="input-password" name="password" placeholder="Password" pattern="(?=^.{8,}$)(?=.*[A-Z])(?=.*[a-z]).*$" autocomplete="off" required>
+                <p class="alert">The required Password must contain small, capital Characters and Numbers </p>
+                <br>
+                <input id="submit-btn" type="submit" value="LOGIN">
+                <p class="paragraph">Not registered? <a class ="link" href="mailto:admin@gmail.com?subject=Mail from LogIn Form">Contact with Admin</a></p>
+            </form>     
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
