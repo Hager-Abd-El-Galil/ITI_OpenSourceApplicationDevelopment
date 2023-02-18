@@ -32,3 +32,4 @@ WorkShop
 ## JavaScript Library (jQuery)
 
 [Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20Library%20(jQuery)/Lab1) <br/>
+[Lab2](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20Library%20(jQuery)/Lab2) <br/>
