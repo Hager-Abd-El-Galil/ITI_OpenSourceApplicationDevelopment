@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='icon' href="./favicon.ico">
+    <title>Welcome</title>
+    <link rel="styleSheet" href="./style.css">
+</head>
+<body class="welcomeContainer">
+    <div id="welcomeMessage">
+        <div class="welcome">
+            <h2>Welcome {name}</h2>
+            <span>Your Entered Data As Follows</span>
+            <ul>
+                <li>MobileNumber : {tel}</li> 
+                <li>Email : {email}</li>
+                <li>Address : {address}</li>
+            </ul> 
+        </div>
+        <button id="showbtn">Show All Users</button>
+    </div>
+    <div class="table">
+        <table id="usersTable">
+            <caption>Users' Data</caption>
+            <tr>
+                <th>Name</th>
+                <th>Mobile Number</th>
+                <th>Address</th>
+                <th>Email</th>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

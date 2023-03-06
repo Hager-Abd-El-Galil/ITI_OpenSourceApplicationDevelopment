@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | LogIn</title>
+    <link rel='icon' href="./favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class= "form-container">
+            <form id="validation-form" action="./welcome.html" method="POST">
+                <input type="text" id="input-name" name="name" placeholder="Name" pattern="[A-Za-z]{3,}" autocomplete="off" required>
+                <p class="alert">The required name may not include any special characters</p>
+                <br>
+                <input type="tel" id="input-tel" name="tel" placeholder="Mobile Number" pattern="^01[0125][0-9]{8}$" autocomplete="off" required>
+                <p class="alert">The required Mobile Number must be in 01xxxxxxxxx</p>
+                <br>
+                <input type="text" id="input-address" name="address" placeholder="Address" pattern="^[a-zA-Z0-9\s,'-]*$" autocomplete="off" required>
+                <p class="alert">Please Enter a Valid Address</p>
+                <br>
+                <input type="email" id="input-email" name="email" placeholder="Email" pattern="[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,4}$" autocomplete="off" required>
+                <p class="alert">The required email address may not include any special characters other than the '@' sign</p>
+                <br>
+                <input type="password" id="input-password" name="password" placeholder="Password" pattern="(?=^.{8,}$)(?=.*[A-Z])(?=.*[a-z]).*$" autocomplete="off" required>
+                <p class="alert">The required Password must contain small, capital Characters and Numbers </p>
+                <br>
+                <input id="submit-btn" type="submit" value="LOGIN">
+            </form>     
+        </div>
+    </div>
+</body>
+</html>
