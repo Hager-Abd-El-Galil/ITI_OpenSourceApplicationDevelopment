@@ -1,0 +1,73 @@
+body { 
+    margin: 0; 
+    padding-bottom: 3rem; 
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+}
+#chatApp{
+    width: 50%;
+    border-radius: 10px;
+    position: absolute;
+}
+#form { 
+    width: 50%;
+    background: rgba(0, 0, 0, 0.15); 
+    position: fixed;
+    padding: 0.25rem; 
+    bottom:0;
+    display: flex; 
+    height: 3rem; 
+    box-sizing: border-box; 
+    backdrop-filter: blur(10px); 
+}
+
+#input { 
+    border: none; 
+    padding: 0 1rem; 
+    flex-grow: 1; 
+    border-radius: 2rem; 
+    margin: 0.25rem; 
+}
+#input:focus { 
+    outline: none; 
+}
+#form > button { 
+    background: #333; 
+    border: none; 
+    padding: 0 1rem;
+     margin: 0.25rem; 
+     border-radius: 3px; 
+     outline: none; 
+     color: #fff; 
+}
+
+#form > button { 
+    cursor:pointer;
+}
+
+#messages { 
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#messages > li { 
+    border: none; 
+    padding: 0.75rem 2.5rem; 
+    flex-grow: 1; 
+    border-radius: 2rem; 
+    margin: 1rem;
+}
+#messages > li:nth-child(odd) { 
+    width: 50%;
+    float:left;
+    background: rgb(213, 211, 211); 
+}
+#messages > li:nth-child(even) { 
+    width: 50%;
+    float:right;
+    background:#3a7bd5; 
+}
