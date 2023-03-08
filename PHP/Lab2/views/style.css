@@ -1,0 +1,132 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+.card {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    gap: 2rem;
+}
+
+.left {
+    width: 20vw;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.left img {
+    width: inherit;
+    object-fit: cover;
+    transform: scale(1.4);
+}
+
+.right .contact {
+    display: flex;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0 0;
+}
+
+.form input,textarea{
+    width: 100%;
+    outline: none;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 10px 0;
+    margin: 5px 0;
+}
+input[type="text"],input[type="email"],textarea{
+    font-family: monospace;
+}
+
+.usersubmit input {
+    background-color: #ace;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    width: min-content;
+    padding: 15px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.usersubmit input:hover {
+    background-color: white;
+    color: #ace;
+    border: solid thin #ace;
+}
+
+#after_submit {
+    font-family: monospace;
+    color: red;
+    margin-top: 3vh;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 60vw;
+        height: 40vh;
+    }
+
+    #after_submit {
+        font-family: monospace;
+        color: red;
+        margin-top: 3vh;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        overflow: hidden;
+    }
+
+    .left {
+        height: 20vh;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    #after_submit {
+        font-family: monospace;
+        color: red;
+        margin-top: 3vh;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
