@@ -1,0 +1,9 @@
+{
+    "require": {
+        "guzzlehttp/guzzle":"~6.0"
+    },
+    "autoload": {
+
+        "files": ["config.php", "functions.php"]
+    }  
+}

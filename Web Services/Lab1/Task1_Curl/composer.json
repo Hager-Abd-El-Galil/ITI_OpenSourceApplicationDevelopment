@@ -1,0 +1,12 @@
+{
+    "name" : "weather app",
+    "description":"weather app",
+    "license" : "MIT",
+    "require": {
+        "endroid/qr-code": "*"
+    },
+    "autoload": {
+
+        "files": ["config.php", "functions.php"]
+    }  
+}

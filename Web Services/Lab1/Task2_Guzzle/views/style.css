@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'montserrat', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1592210454359-9043f067919b?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzE0NjIwMjg&ixlib=rb-4.0.3&q=80');
+    background-size:180% 180%;
+    background-position: top center;
+}
+.app-wrap {
+    background:rgba(0, 0, 0, 0.3);
+    border:solid thin transparent;
+    border-radius:10px;
+    color:aliceblue;
+    width:40%;
+    margin-left:30%;
+    margin-top: 5%;
+    padding-top:1%;
+    padding-bottom:2%;
+} 
+form{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 15px 15px;
+}
+form select ,form button{
+    padding: 0.8%;
+    margin:1%;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;  
+    font-size: medium;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+} 
+form button{
+    cursor: pointer;
+    font-weight: bold;
+    color:white;
+    background-color:transparent;
+    border:solid 2px white;
+}
+form button:hover{
+    background-color:rgba(0,0,0,0.3);
+    border:none;
+  }
+
+   
