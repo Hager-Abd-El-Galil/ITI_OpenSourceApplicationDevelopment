@@ -1,35 +1,8 @@
-# ITI_OpenSourceApplicationDevelopment
-## ITI Alexandria | 9-Months Scholarship | Intake 43 | Track: Open Source Application Development
+# Web Services
+## Lab1
+#### Task1 : Weather App Using Curl
+#### Task2 : Weather App Using Guzzle
+![image](https://user-images.githubusercontent.com/81237428/224495225-e653f998-f1bd-472c-acc3-962372efd124.png)
 
-## HTML5 & CSS3 
 
-[Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/HTML5%20&%20CSS3/Lab1) <br/>
-[Lab2](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/HTML5%20&%20CSS3/Lab2) <br/>
-[Lab3](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/HTML5%20&%20CSS3/Lab3) <br/>
 
-## CSS Frameworkes
-
-[Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/CSS%20Frameworks/Lab1) <br/>
-[Lab2](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/CSS%20Frameworks/Lab2) <br/>
-
-## JavaScript and ES6
-
-[Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab1) <br/>
-[Lab2](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab2) <br/>
-[Lab3](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab3) <br/>
-[Lab4](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab4) <br/>
-[Lab5](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab5) <br/>
-[Lab6](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab6) <br/>
-[Lab7](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab7) <br/>
-[Lab8](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab8) <br/>
-[Lab9](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/Lab9) <br/>
-<br/>
-WorkShop
-- [TO-DO-LIST](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/WorkShop/TO%20DO%20LIST) <br/>
-- [Validation-Form-LogIn](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/WorkShop/Simple%20Form%20LogIn) <br/>
-- [Fetch-Data-From-URL](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20and%20ES6/WorkShop/Fetch%20Data) <br/>
-
-## JavaScript Library (jQuery)
-
-[Lab1](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20Library%20(jQuery)/Lab1) <br/>
-[Lab2](https://hager-abd-el-galil.github.io/ITI_OpenSourceApplicationDevelopment/JavaScript%20Library%20(jQuery)/Lab2) <br/>
