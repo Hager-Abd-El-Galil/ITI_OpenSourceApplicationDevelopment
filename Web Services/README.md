@@ -1,11 +1,11 @@
 # Web Services
 ## Lab1
-#### Task1 : Weather App Using Curl
-#### Task2 : Weather App Using Guzzle
+### Task1 : Weather App Using Curl
+### Task2 : Weather App Using Guzzle
 ![image](https://user-images.githubusercontent.com/81237428/224495225-e653f998-f1bd-472c-acc3-962372efd124.png)
 
 ## Lab2
-#### Creating a RESTFul web service
+### Creating a RESTFul web service
 
 | METHOD | URL | ACTION |
 | --- | --- | --- |
@@ -15,7 +15,7 @@
 | PUT | /webServices_Labs/Lab2/index.php/products/{id} | Update Product By ID |
 | DELETE | /webServices_Labs/Lab2/index.php/products/{id} | Delete Product By ID |
 
-### Sample Data
+#### Sample Data
 ```
    { 
        "id": "100", 
