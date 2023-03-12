@@ -1,10 +1,11 @@
-# Web Services
+# PHP
 ## Lab1
 #### Contact Form
 ![image](https://user-images.githubusercontent.com/81237428/224558985-600b9a6b-fb15-41e1-9f92-93391b545252.png)
 
 ## Lab2
 #### Contact Form With Advanced Features
+![image](https://user-images.githubusercontent.com/81237428/224560374-6304de84-f949-4ddc-b8ce-78504db8af33.png)
 
 ## Lab3
 #### Website Visitor Counter
