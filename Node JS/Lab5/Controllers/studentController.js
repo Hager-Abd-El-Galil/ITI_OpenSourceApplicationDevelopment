@@ -1,4 +1,5 @@
 const studentModel = require('../Models/studentModel');
+const studentValidator = require('../Utils/studentValidator');
 
 var getAllStudents = async (req,res)=>{
     let allStudents = await studentModel.find();
@@ -11,9 +12,16 @@ var getStudentByID = async (req,res)=>{
  };
 
 var addNewStudent = async (req,res)=>{
+    var foundStudent = await studentModel.findOne({name:req.body.name,dept:req.body.dept}).exec();
+    if(foundStudent) return res.json("Student Already Exists..");
     var newStudent = new studentModel(req.body);
-    await newStudent.save();
-    res.json(newStudent);
+    var validStudent = studentValidator(newStudent);
+    if(validStudent){
+        await newStudent.save();
+        res.json(newStudent);
+    }else{
+        res.json("Not Compatible...")
+    }
  };
 
 var deleteStudent = async (req,res)=>{
