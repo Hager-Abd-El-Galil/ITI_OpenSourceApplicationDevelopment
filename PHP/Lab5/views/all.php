@@ -41,8 +41,9 @@ if(isset($_POST['search']) && !empty(($_POST['search']))){
                             <input type="search" placeholder="What' re you searching for?"
                                 aria-describedby="button-addon6" class="form-control" name="search">
                             <div class="input-group-append">
-                                <button id="button-addon6" type="submit" class="btn btn-info">
-                                    <i class="fa fa-search"></i>
+                                <button id="button-addon6" type="submit" class="btn btn-info"
+                                    style="background:#309df0;">
+                                    <i class=" fa fa-search"></i>
                                 </button>
                             </div>
                         </div>
