@@ -13,7 +13,9 @@
 
 ## Lab4
 #### Connect to Database
-![image](https://user-images.githubusercontent.com/81237428/225902591-29631054-5d24-4709-b260-f40cb22b11ae.png)
+[https://user-images.githubusercontent.com/81237428/225902591-29631054-5d24-4709-b260-f40cb22b11ae.png](https://user-images.githubusercontent.com/81237428/225905548-4a77976b-436f-44cc-9839-4bbdbc04fbf3.mp4)
+
+
 
 
 
