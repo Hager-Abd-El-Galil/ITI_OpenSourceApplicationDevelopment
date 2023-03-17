@@ -1,0 +1,438 @@
+/*---All Products---*/
+*{
+    box-sizing: border-box;
+    font-family: ' Over the Rainbow', cursive;
+}
+h1{
+    letter-spacing: 3px;
+    text-shadow: 0 2px  rgba(136, 144, 195, 0.2),
+    0 8px rgba(37, 44, 97, 0.15);
+    font-weight: bolder;
+}
+.form-control:focus {
+    box-shadow: none;
+  }
+.form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+.cards_box .product_card {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+      0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    border-radius: 15px;
+    margin: 8px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 265px;
+    transition: 0.7s;
+}
+  
+.cards_box .product_card:hover {
+    background: #309df0;
+    color: #fff;
+    transform: scale(1.1);
+    z-index: 9;
+}
+  
+.cards_box .product_card:hover::before {
+    background: rgb(85 108 214 / 10%);
+}
+  
+.cards_box .product_card:hover .card_title h3,
+.cards_box .product_card:hover .card_description p {
+    color: #fff;
+}
+  
+.cards_box .product_card:before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+}
+.product_card .card_description {
+    text-align: center; 
+}
+
+.product_card .card_description .image {
+    width:100%;
+    height: 150px;
+    margin-bottom: 3%;
+} 
+.cards_box .product_card:hover .card_description button {
+    background: #fff !important;
+    color: #309df0;
+}
+.cards_box .product_card:hover .card_description button a{
+    background: #fff !important;
+    color: #309df0;
+}
+.cards_box .product_card:hover .card_description .image {
+    width:140px !important;
+    height: 140px;
+    border-radius:50% !important;
+}
+  
+.product_card .card_title h3 {
+    color: #212121;
+    font-size: 1.3rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+  
+.product_card .card_description p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.discount {
+    position: absolute;
+    display: inline-block;
+    top: 0em;
+    right: 0em;
+    color: #fff;
+    z-index: 2;
+}
+  
+.discount::after {
+    position: absolute;
+    top: -1.3em;
+    right: -5em;
+    content: ""; 
+    height: 5em;
+    width: 10em;
+    transform: rotatez(45deg);
+    background-color: #fbc634;
+    z-index:-1;
+}  
+.product_card .card_description button {
+    border: 0;
+    border-radius: 15px;
+    background: #309df0 !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 5px 16px;
+}
+
+.product_card .card_description button a{
+    text-decoration: none;
+    color:white;
+}
+
+.hover_color_bubble {
+    position: absolute;
+    background: rgb(54 81 207 / 15%);
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    transform: rotate(-36deg);
+    left: -18rem;
+    transition: 0.7s;
+}
+  
+.cards_box .product_card:hover .hover_color_bubble {
+    top: 0rem;
+}
+.prev-btn b, .next-btn b{
+    font-size: x-large;
+}
+.prev-btn {
+    border: 0;
+    background: #309df0 !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0 16px;
+    padding-bottom: 5px;
+    margin-top: 3%;
+
+}
+.next-btn {
+    border: 0;
+    background: #309df0 !important;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0 32px;
+    padding-bottom: 5px;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+button a {
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+button a:hover {
+    text-decoration: none;
+    color:white;
+}
+  
+/*---Product Details Page---*/
+
+.cards-box .product-card {
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+      0 5px 15px 0 rgba(37, 44, 97, 0.15);
+    border-radius: 15px;
+    margin: 8px;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    min-height: 265px;
+    transition: 0.7s;
+    overflow: hidden;
+}
+ 
+.cards-box .product-card:before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+}
+.product-card .card-description {
+    text-align: center; 
+}
+
+.product-card .card-description .image {
+    width:100%;
+    height: 150px;
+    margin-bottom: 3%;
+} 
+  
+.product-card .card-title h3 {
+    color: #212121;
+    font-size: 1.3rem;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+  
+.product-card .card-description p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.price{
+    font-size: x-large !important;
+}
+  
+.hover-color-bubble {
+    position: absolute;
+    background: rgb(54 81 207 / 15%);
+    width: 100rem;
+    height: 100rem;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    top: 16rem;
+    border-radius: 50%;
+    transform: rotate(-36deg);
+    left: -18rem;
+    transition: 0.7s;
+}
+
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{  
+    color:#cecece;
+    font-size:18px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+
+.location{
+    font-size:22px;
+    color:red;
+    margin-right:2%;
+    animation: updown 1s ease 0.2s infinite;
+}
+
+  @keyframes updown {
+      0%   {
+        transform: translateY(-2px);
+      }
+  
+      50% {
+        transform: translateY(2px);
+      }
+    
+      100% {
+        transform: translateY(-2px);
+      }
+  }
+
+  /*---Not Found---*/
+  .error {
+    font-family: "Abril Fatface", serif;
+    color: #EDEDED;
+    text-align: center;
+    font-size: 3em;
+    margin: 2%;
+    letter-spacing: 5px;
+    text-shadow: -1px 0 #BFC0C0, 0 1px #BFC0C0, 1px 0 #BFC0C0, 0 -1px #BFC0C0;
+  }
+  
+  .not-found {
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #BFC0C0;
+    margin-bottom: 5%;
+    font-weight: 900;
+  }
+  .container {
+    margin: 0 auto;
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin-top: -40px;
+  }
+  
+  .ghost {
+    width: 50%;
+    height: 53%;
+    left: 25%;
+    top: 10%;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    background: #EDEDED;
+    border: 1px solid #BFC0C0;
+    border-bottom: none;
+    animation: float 2s ease-out infinite;
+  }
+  
+  .ghost-copy {
+    width: 50%;
+    height: 53%;
+    left: 25%;
+    top: 10%;
+    position: absolute;
+    border-radius: 50% 50% 0 0;
+    background: #EDEDED;
+    border: 1px solid #BFC0C0;
+    border-bottom: none;
+    animation: float 2s ease-out infinite;
+    z-index: 0;
+  }
+  
+  .face {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 20%;
+  }
+  
+  .eye, .eye-right {
+    position: absolute;
+    background: #585959;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    top: 40%;
+  }
+  
+  .eye {
+    left: 25%;
+  }
+  
+  .eye-right {
+    right: 25%;
+  }
+  
+  .mouth {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    border-radius: 50%;
+    border-color: transparent #585959 #585959 transparent;
+    transform: rotate(45deg);
+  }
+  
+  .one, .two, .three, .four {
+    position: absolute;
+    background: #EDEDED;
+    top: 85%;
+    width: 25%;
+    height: 23%;
+    border: 1px solid #BFC0C0;
+    z-index: 0;
+  }
+  
+  .one {
+    border-radius: 0 0 100% 30%;
+    left: -1px;
+  }
+  
+  .two {
+    left: 23%;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  .three {
+    left: 50%;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  .four {
+    left: 74.5%;
+    border-radius: 0 0 30% 100%;
+  }
+  
+  .shadow {
+    position: absolute;
+    width: 30%;
+    height: 7%;
+    background: #BFC0C0;
+    left: 35%;
+    top: 80%;
+    border-radius: 50%;
+    animation: scale 2s infinite;
+  }
+  
+  @keyframes scale {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes float {
+    50% {
+      transform: translateY(15px);
+    }
+  }
+  .bottom {
+    margin-top: 10px;
+  }
+  
