@@ -3,7 +3,7 @@
 @section('title') Edit Post @endsection
 
 @section('content')
-<form class='my-5' action="{{route('posts.store')}}" method="post">
+<form class='my-5' action="{{route('posts.update')}}" method="put">
     @csrf
     <div class="mb-3">
         <label for="exampleInputTitle" class=" form-label fs-4">Title</label>

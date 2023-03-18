@@ -60,4 +60,9 @@ class PostController extends Controller
 
         return redirect() -> route('posts.index');
     }
+
+    public function update(){
+
+        return redirect() -> route('posts.index');
+    }
 }
