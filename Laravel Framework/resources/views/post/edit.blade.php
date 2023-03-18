@@ -3,8 +3,9 @@
 @section('title') Edit Post @endsection
 
 @section('content')
-<form class='my-5' action="{{route('posts.update')}}" method="put">
+<form class='my-5' action="{{route('posts.update',$post['id'])}}" method="post">
     @csrf
+    @method('PUT')
     <div class="mb-3">
         <label for="exampleInputTitle" class=" form-label fs-4">Title</label>
         <input type="text" class="form-control" placeholder="Enter Post Title.." id="exampleInputTitle"

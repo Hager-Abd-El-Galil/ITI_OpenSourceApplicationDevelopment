@@ -52,8 +52,15 @@ class PostController extends Controller
     }
 
     public function edit($id){
+        $post =  [
+            'id' => 2,
+            'title' => 'PHP',
+            'posted_by' => 'Mohamed',
+            'created_at' => '2022-08-01 10:00:00',
+            'description' => 'hello description'
+        ];
 
-        return view('post.edit');
+        return view('post.edit', ['post' => $post]);
     }
 
     public function store(){
