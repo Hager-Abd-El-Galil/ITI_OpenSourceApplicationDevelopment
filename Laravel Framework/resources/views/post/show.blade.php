@@ -3,7 +3,7 @@
 @section('title') Show Post @endsection
 
 @section('content')
-<div class="card mt-6">
+<div class="card my-5">
     <div class="card-header">
         Post Info
     </div>
