@@ -8,8 +8,8 @@
         Post Info
     </div>
     <div class="card-body">
-        <h5 class="card-title">Title: {{$post['title']}}</h5>
-        <p class="card-text">Description: {{$post['description']}}</p>
+        <h5 class="card-title">Title: {{$post->title}}</h5>
+        <p class="card-text fs-6"><b>Description: </b> {{$post->description}}</p>
     </div>
 </div>
 
@@ -18,8 +18,12 @@
         Post Creator Info
     </div>
     <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text fs-6"><b>Name: </b> {{$post->user->name}}</p>
+        <p class="card-text fs-6"><b>Email: </b> {{$post->user->email}}</p>
+        <p class="card-text fs-6"><b>Created At: </b> {{$post->created_at->format('l jS F Y h:i:s A')}}</p>
+        @if($post->updated_at)
+        <p class="card-text fs-6"><b>Updated At: </b> {{$post->updated_at->format('l jS F Y h:i:s A')}}</p>
+        @endif
     </div>
 </div>
 
