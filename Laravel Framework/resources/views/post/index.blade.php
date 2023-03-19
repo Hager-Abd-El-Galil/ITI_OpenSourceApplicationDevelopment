@@ -72,10 +72,12 @@
         @endforeach
     </tbody>
 </table>
+
 <div class="row col-12 text-center d-flex flex-row justify-content-center my-4">
     <div class="row w-auto">
         {{ $posts->links('pagination::bootstrap-4')}}</div>
 </div>
+
 <script src=" https://code.jquery.com/jquery-3.6.0.min.js">
 </script>
 <script>
