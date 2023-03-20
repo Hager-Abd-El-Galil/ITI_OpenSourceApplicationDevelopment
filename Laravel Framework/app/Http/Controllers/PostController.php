@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 use App\Models\User;
+use GuzzleHttp\Psr7\Request as Psr7Request;
 use Illuminate\Http\Request;
+use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
 
 class PostController extends Controller
 {
@@ -51,7 +53,7 @@ class PostController extends Controller
         return to_route('posts.index');
     }
 
-    public function update(StorePostRequest $request)
+    public function update(storePostRequest $request)
     {
         $id = request()->id;
         $title = request()->title;
@@ -69,6 +71,13 @@ class PostController extends Controller
     public function delete($id)
     {
         Post::where('id', $id)->delete();
+        return to_route('posts.index');
+    }
+
+    public function restore($id)
+    {
+        $post = Post::withTrashed()->find($id);
+        $post->restore();
         return to_route('posts.index');
     }
 }

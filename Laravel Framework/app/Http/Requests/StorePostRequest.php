@@ -22,8 +22,9 @@ class StorePostRequest extends FormRequest
     public function rules(): array
     {
         return [
-                'title'=> ['required','min:3'],
-                'description' => ['required','min:10']
+                'title'=> ['required','min:3','unique:posts,title,'.$this->id],
+                'description' => ['required','min:10'],
+                'user_id' => 'required|exists:users,id'
             ];
 
     }
@@ -33,6 +34,7 @@ class StorePostRequest extends FormRequest
         return [
             'title' => [
                 'required' => 'A Title is Required',
+                'unique' => 'Title is must be Unique',
                 'min' => 'A Title must be larger than 3 Characters'
             ],
             'description' => [

@@ -38,8 +38,12 @@
             <td class="text-center">
                 <x-button href="{{route('posts.show', $post->id)}}" type="info" label="View" />
                 <x-button href="{{route('posts.edit', $post->id)}}" type="primary" label="Edit" />
+                @if($post->trashed())
+                <x-button href="{{route('posts.restore', $post->id)}}" type="danger" label="Delete" />
+                @else
                 <button class="btn btn-danger" data-bs-toggle="modal"
                     data-bs-target="#confirm-delete-modal{{$post->id}}">Delete</button>
+                @endif
             </td>
         </tr>
         <!--Delete Modal-->

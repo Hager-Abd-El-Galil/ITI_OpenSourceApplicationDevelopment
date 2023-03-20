@@ -12,6 +12,7 @@
         <input type="text" class="form-control" name="title" value="{{ $post['title'] }}"
             placeholder="Enter Post Title.." id=" exampleInputTitle" pattern="^[A-Za-z]+$" required>
     </div>
+
     @error('title')
     <div class="alert alert-danger my-1">{{$message}}</div>
     @enderror
