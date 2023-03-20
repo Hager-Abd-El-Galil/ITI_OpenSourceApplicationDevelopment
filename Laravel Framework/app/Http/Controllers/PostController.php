@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -35,7 +36,7 @@ class PostController extends Controller
         return view('post.edit', ['post' => $post,'users' => $users]);
     }
 
-    public function store()
+    public function store(StorePostRequest $request)
     {
         $title = request()->title;
         $description = request()->description;
@@ -50,13 +51,13 @@ class PostController extends Controller
         return to_route('posts.index');
     }
 
-    public function update()
+    public function update(StorePostRequest $request)
     {
         $id = request()->id;
         $title = request()->title;
         $description = request()->description;
         $postCreator = request()->post_creator;
-        
+
         Post::where('id', $id)->update([
             'title' => $title,
             'description' => $description,

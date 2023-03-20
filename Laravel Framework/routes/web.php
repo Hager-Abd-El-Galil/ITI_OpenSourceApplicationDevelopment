@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\PostController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,13 +17,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {return view('welcome');});
-Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
-Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
-Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index')->middleware(['auth']);
+Route::group(['middleware' =>['auth']], function(){
 
-Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
-Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
-Route::delete('/posts/{post}', [PostController::class, 'delete'])->name('posts.delete');
+    Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
+    Route::get('/posts/{post}/edit', [PostController::class, 'edit'])->name('posts.edit');
+    Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
 
-Route::post('/posts/{post}/comment', [CommentController::class,"store"])->name("comments.store");
+    Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+    Route::put('/posts/{post}', [PostController::class, 'update'])->name('posts.update');
+    Route::delete('/posts/{post}', [PostController::class, 'delete'])->name('posts.delete');
+
+    Route::post('/posts/{post}/comment', [CommentController::class,"store"])->name("comments.store");
+
+});
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

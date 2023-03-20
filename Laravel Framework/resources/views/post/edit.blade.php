@@ -12,11 +12,17 @@
         <input type="text" class="form-control" name="title" value="{{ $post['title'] }}"
             placeholder="Enter Post Title.." id=" exampleInputTitle" pattern="^[A-Za-z]+$" required>
     </div>
+    @error('title')
+    <div class="alert alert-danger my-1">{{$message}}</div>
+    @enderror
     <div class="form-floating mb-3">
         <p class="fs-4">Description</p>
         <textarea class="form-control" id="floatingTextarea" style="height: 120px" name="description"
             required>{{ $post['description'] }}</textarea>
     </div>
+    @error('description')
+    <div class="alert alert-danger my-1">{{$message}}</div>
+    @enderror
     <div class="mb-3">
         <label for="exampleInputCreator" class="form-label fs-4">Post Creator</label>
         <select class="form-select" name="post_creator" aria-label="Default select example">
