@@ -13,7 +13,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $allPosts = Post::paginate(5);
+        $allPosts = Post::withTrashed()->paginate(5);
         return view('post.index', ['posts' => $allPosts]);
     }
 
@@ -71,13 +71,13 @@ class PostController extends Controller
     public function delete($id)
     {
         Post::where('id', $id)->delete();
-        return to_route('posts.index');
+        return redirect()->back();
     }
 
     public function restore($id)
     {
         $post = Post::withTrashed()->find($id);
         $post->restore();
-        return to_route('posts.index');
+        return redirect()->back();
     }
 }
