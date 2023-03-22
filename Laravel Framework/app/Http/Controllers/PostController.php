@@ -51,7 +51,7 @@ class PostController extends Controller
             'user_id' => $postCreator,
         ]);
 
-        return to_route('posts.index');
+        return to_route('posts.index')->with('success', 'A Post is Created Successfully!');
     }
 
     public function update(storePostRequest $request)
@@ -67,19 +67,19 @@ class PostController extends Controller
             'description' => $description,
             'user_id' => $postCreator,
         ]);
-        return to_route('posts.index');
+        return to_route('posts.index')->with('success', 'A Post is Updated Successfully!');;
     }
 
     public function delete($id)
     {
         Post::where('id', $id)->delete();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'A Post is Deleted Successfully!');;
     }
 
     public function restore($id)
     {
         $post = Post::withTrashed()->find($id);
         $post->restore();
-        return redirect()->back();
+        return redirect()->back()->with('success', 'A Post is Restored Successfully!');;
     }
 }

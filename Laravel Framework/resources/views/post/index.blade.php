@@ -3,6 +3,14 @@
 @section('title') Home @endsection
 
 @section('content')
+
+@if(session('success'))
+    <div id ="alert-message" class="alert alert-success mt-4 mb-0 alert-dismissible">
+        {{ session('success') }}
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+@endif
+
 <div class="text-center">
     <a href="{{route('posts.create')}}" class="mt-4 btn btn-success">Create Post</a>
 </div>
@@ -58,7 +66,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="confirm-delete-modal-label">Confirm Delete</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
@@ -67,7 +75,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" id="cancel-delete-button"
-                            data-dismiss="modal">Cancel</button>
+                            data-bs-dismiss="modal">Cancel</button>
                         <form style="display: inline" method="POST"
                             action="{{ route('posts.delete', ['post' => $post->id]) }}">
                             @method('DELETE')
@@ -88,16 +96,6 @@
 </div>
 
 <script src=" https://code.jquery.com/jquery-3.6.0.min.js">
-</script>
-<script>
-$(function() {
-    $('#confirm-delete-button').click(function() {
-        $('#confirm-delete-modal').modal('hide');
-    });
-    $('#cancel-delete-button').click(function() {
-        $('#confirm-delete-modal').modal('hide');
-    });
-});
 </script>
 
 @endsection
