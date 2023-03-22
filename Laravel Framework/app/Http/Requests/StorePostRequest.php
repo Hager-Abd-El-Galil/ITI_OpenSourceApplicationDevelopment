@@ -22,9 +22,9 @@ class StorePostRequest extends FormRequest
     public function rules(): array
     {
         return [
-                'title'=> ['required','min:3','unique:posts,title,'.$this->id],
+                'title'=> ['required','min:3','unique:posts,title,'.$this->post],
                 'description' => ['required','min:10'],
-                'user_id' => 'required|exists:users,id'
+                'user_id' => ['required|exists:users,id']
             ];
 
     }

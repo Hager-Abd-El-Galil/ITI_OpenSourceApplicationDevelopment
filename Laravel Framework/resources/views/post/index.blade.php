@@ -22,7 +22,12 @@
         @foreach($posts as $post)
         <tr>
             <td class="text-center">{{$post->id}}</td>
+            @if($post->slug)
+            <td class="text-center">{{$post->slug}}</td>
+            @else
             <td class="text-center">{{$post->title}}</td>
+            @endif
+
             @if($post->user)
             <td class="text-center">{{$post->user->name}}</td>
             @else

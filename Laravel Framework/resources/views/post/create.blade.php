@@ -8,7 +8,7 @@
     <div class="mb-3">
         <label for="exampleInputTitle" class=" form-label fs-4">Title</label>
         <input type="text" class="form-control" name="title" placeholder="Enter Post Title.." id="exampleInputTitle"
-            pattern="^[A-Za-z]+$" required>
+            required>
     </div>
     @error('title')
     <div class="alert alert-danger my-1">{{$message}}</div>
@@ -32,5 +32,6 @@
     </div>
     <button type="submit" class="btn btn-success">Create</button>
 </form>
+
 
 @endsection
