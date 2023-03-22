@@ -3,6 +3,8 @@
 @section('title') Show Post @endsection
 
 @section('content')
+
+<!--Post Info Section-->
 <div class="card my-5">
     <div class="card-header">
         Post Info
@@ -10,9 +12,14 @@
     <div class="card-body">
         <h5 class="card-title">Title: {{$post->title}}</h5>
         <p class="card-text fs-6"><b>Description: </b> {{$post->description}}</p>
+        @if($post->image_path)
+            {{-- <img src={{asset("../../../storage/app/$post->image_path")}} alt="{{$post->image_path}}"> --}}
+            <p class="card-text fs-6"><b>Image Url: </b> {{$post->image_path}}</p>
+        @endif
     </div>
 </div>
 
+<!--Post Creator Info Section-->
 <div class="card mt-6">
     <div class="card-header">
         Post Creator Info
@@ -22,16 +29,17 @@
         <p class="card-text fs-6"><b>Email: </b> {{$post->user->email}}</p>
         <p class="card-text fs-6"><b>Created At: </b> {{$post->created_at->format('l jS F Y h:i:s A')}}</p>
         @if($post->updated_at)
-        <p class="card-text fs-6"><b>Updated At: </b> {{$post->updated_at->format('l jS F Y h:i:s A')}}</p>
+            <p class="card-text fs-6"><b>Updated At: </b> {{$post->updated_at->format('l jS F Y h:i:s A')}}</p>
         @endif
     </div>
 </div>
 
-<!--Comment-->
+<!--Comments Section-->
 <div class="card my-5">
     <div class="card-header">
         Comments
     </div>
+
     @foreach ($comments as $comment)
     <div class="card m-3 col-8">
         <div class="card-body">

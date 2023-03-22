@@ -24,7 +24,8 @@ class StorePostRequest extends FormRequest
         return [
                 'title'=> ['required','min:3','unique:posts,title,'.$this->post],
                 'description' => ['required','min:10'],
-                'user_id' => ['required|exists:users,id']
+                'user_id' => ['required|exists:users,id'],
+                'image' => ['mimes:jpeg,png']
             ];
 
     }
@@ -40,6 +41,9 @@ class StorePostRequest extends FormRequest
             'description' => [
                 'required' => 'A Description is Required',
                 'min' => 'A Description must be larger than 10 Characters'
+            ],
+            'image' => [
+                'mimes' => 'An Image Must be jpeg or png Only'
             ]
         ];
     }

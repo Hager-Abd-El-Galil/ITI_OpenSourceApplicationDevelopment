@@ -8,6 +8,7 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use GuzzleHttp\Psr7\Request as Psr7Request;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
 
 class PostController extends Controller
@@ -18,9 +19,9 @@ class PostController extends Controller
         return view('post.index', ['posts' => $allPosts]);
     }
 
-    public function show($id)
+    public function show($post)
     {
-        $post =  Post::find($id);
+        $post =  Post::find($post);
         $comments = $post->comments;
         return view('post.show', ['post' => $post,'comments' => $comments]);
     }
@@ -31,54 +32,70 @@ class PostController extends Controller
         return view('post.create',['users' => $users]);
     }
 
-    public function edit($id)
+    public function edit($post)
     {
         $users = User::all();
-        $post = Post::find($id);
+        $post = Post::find($post);
 
         return view('post.edit', ['post' => $post,'users' => $users]);
     }
 
     public function store(StorePostRequest $request)
     {
-        $title = request()->title;
-        $description = request()->description;
-        $postCreator = request()->post_creator;
-
-        Post::create([
-            'title' => $title,
-            'description' => $description,
-            'user_id' => $postCreator,
+        $post = Post::create([
+            'title' =>  $request->title,
+            'description' => $request->description,
+            'user_id' => $request->post_creator
         ]);
+
+        if ($request->hasFile('image')) {
+            $image = $request->file('image');
+            $filename = $image->getClientOriginalName();
+            $path = Storage::putFileAs('posts', $image, $filename);
+            $post->image_path = $path;
+            $post->save();
+        }
 
         return to_route('posts.index')->with('success', 'A Post is Created Successfully!');
     }
 
-    public function update(storePostRequest $request)
+    public function update($post,storePostRequest $request)
     {
-        $id = request()->id;
-        $title = request()->title;
-        $description = request()->description;
-        $postCreator = request()->post_creator;
+        $post = Post::findOrFail($post);
 
-        Post::where('id', $id)->update([
-            'title' => $title,
-            'slug' => Str::slug($title),
-            'description' => $description,
-            'user_id' => $postCreator,
+        if ($request->hasFile('image')) {
+            if ($post->image_path) {
+                Storage::delete($post->image_path);
+            }
+            $image = $request->file('image');
+            $filename = $image->getClientOriginalName();
+            $path = Storage::putFileAs('posts', $image, $filename);
+            $post->image_path = $path;
+        }
+
+        $post->update([
+            'title' => $request->title,
+            'slug' => Str::slug($request->title),
+            'description' => $request->description,
+            'user_id' => $request->post_creator,
         ]);
         return to_route('posts.index')->with('success', 'A Post is Updated Successfully!');;
     }
 
-    public function delete($id)
+    public function delete($post)
     {
-        Post::where('id', $id)->delete();
+        // $post = Post::where('id', $post);
+        $post = Post::findOrFail($post);
+        if ($post->image && Storage::exists($post->image)) {
+            Storage::delete($post->image);
+        }
+        $post->delete();
         return redirect()->back()->with('success', 'A Post is Deleted Successfully!');;
     }
 
-    public function restore($id)
+    public function restore($post)
     {
-        $post = Post::withTrashed()->find($id);
+        $post = Post::withTrashed()->find($post);
         $post->restore();
         return redirect()->back()->with('success', 'A Post is Restored Successfully!');;
     }
