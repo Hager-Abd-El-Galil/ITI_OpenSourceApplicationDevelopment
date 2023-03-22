@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StorePostRequest;
 use App\Models\Post;
 use App\Models\User;
+use Illuminate\Support\Str;
 use GuzzleHttp\Psr7\Request as Psr7Request;
 use Illuminate\Http\Request;
 use TijsVerkoyen\CssToInlineStyles\Css\Rule\Rule;
@@ -62,8 +63,9 @@ class PostController extends Controller
 
         Post::where('id', $id)->update([
             'title' => $title,
+            'slug' => Str::slug($title),
             'description' => $description,
-            'user_id' => $postCreator
+            'user_id' => $postCreator,
         ]);
         return to_route('posts.index');
     }

@@ -10,7 +10,7 @@
     <div class="mb-3">
         <label for="exampleInputTitle" class=" form-label fs-4">Title</label>
         <input type="text" class="form-control" name="title" value="{{ $post['title'] }}"
-            placeholder="Enter Post Title.." id=" exampleInputTitle" pattern="^[A-Za-z]+$" required>
+            placeholder="Enter Post Title.." id=" exampleInputTitle" required>
     </div>
 
     @error('title')
