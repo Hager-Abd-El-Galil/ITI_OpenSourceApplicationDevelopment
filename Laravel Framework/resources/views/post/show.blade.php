@@ -13,8 +13,7 @@
         <h5 class="card-title">Title: {{$post->title}}</h5>
         <p class="card-text fs-6"><b>Description: </b> {{$post->description}}</p>
         @if($post->image_path)
-            {{-- <img src={{asset("../../../storage/app/$post->image_path")}} alt="{{$post->image_path}}"> --}}
-            <p class="card-text fs-6"><b>Image Url: </b> {{$post->image_path}}</p>
+            <img src="{{Storage::url($post->image_path)}}"  alt="{{$post->image_path}}">
         @endif
     </div>
 </div>

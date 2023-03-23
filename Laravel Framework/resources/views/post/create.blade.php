@@ -23,7 +23,7 @@
     @enderror
     <div class="mb-3">
         <label for="exampleInputCreator" class="form-label fs-4">Post Creator<span class="text-danger">*</span></label>
-        <select class="form-select" name="post_creator" aria-label="Default select example">
+        <select class="form-select" name="post_creator">
             <option selected>Choose Post Creator</option>
             @foreach($users as $user)
                 <option value="{{$user->id}}">{{$user->name}}</option>

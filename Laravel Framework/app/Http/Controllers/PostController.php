@@ -51,7 +51,7 @@ class PostController extends Controller
         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $filename = $image->getClientOriginalName();
-            $path = Storage::putFileAs('posts', $image, $filename);
+            $path = Storage::putFileAs('public/posts', $image, $filename);
             $post->image_path = $path;
             $post->save();
         }
@@ -69,7 +69,7 @@ class PostController extends Controller
             }
             $image = $request->file('image');
             $filename = $image->getClientOriginalName();
-            $path = Storage::putFileAs('posts', $image, $filename);
+            $path = Storage::putFileAs('public/posts', $image, $filename);
             $post->image_path = $path;
         }
 
@@ -84,7 +84,6 @@ class PostController extends Controller
 
     public function delete($post)
     {
-        // $post = Post::where('id', $post);
         $post = Post::findOrFail($post);
         if ($post->image && Storage::exists($post->image)) {
             Storage::delete($post->image);
