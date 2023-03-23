@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {return view('welcome');});
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index')->middleware(['auth']);
+Route::get("/posts/removeOld",[PostController::class,"removeOldPosts"]);
+
 Route::group(['middleware' =>['auth']], function(){
 
     Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');

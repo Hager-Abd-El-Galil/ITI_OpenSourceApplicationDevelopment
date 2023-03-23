@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StorePostRequest;
+use App\Jobs\PruneOldPostsJob;
 use App\Models\Post;
 use App\Models\User;
 use Illuminate\Support\Str;
@@ -97,5 +98,10 @@ class PostController extends Controller
         $post = Post::withTrashed()->find($post);
         $post->restore();
         return redirect()->back()->with('success', 'A Post is Restored Successfully!');;
+    }
+
+    public function removeOldPosts()
+    {
+        PruneOldPostsJob::dispatch();
     }
 }
