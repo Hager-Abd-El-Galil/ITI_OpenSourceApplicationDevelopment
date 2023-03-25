@@ -13,7 +13,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $allPosts = Post::all();
+        $allPosts = Post::with('user')->paginate(3);
         return PostResource::collection($allPosts);
     }
 
