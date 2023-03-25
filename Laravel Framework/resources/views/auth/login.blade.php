@@ -2,15 +2,13 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
-
+    <div class="row justify-content-center align-items-center" style="height: 90vh">
+        <div class="col-md-6">
+            <div class="card rounded-5 py-2">
+                <div class="text-center fw-bold fs-2 my-2">{{ __('LOGIN') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
@@ -51,23 +49,36 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                <button type="submit" class="btn btn-dark">
-                                    {{ __('Login With GitHub') }}
-                                </button>
+                        <div class="row col-12 mb-0">
+                            <div class="col-12 d-flex flex-column justify-content-center align-items-center">
+                                <div>
+                                    <button type="submit" class="btn btn-primary text-center px-5">
+                                        {{ __('Login') }}
+                                    </button>
+                                </div>
 
                                 @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
+                                    <div>
+                                        <a class="btn btn-link fs-6" href="{{ route('password.request') }}">
+                                            {{ __('Forgot Your Password?') }}
+                                        </a>
+                                    </div>
                                 @endif
                             </div>
                         </div>
+                        <h5 class="text-center my-4">  OR  </h5>
+                        <div class="col-12 d-flex flex-column justify-content-center align-items-center gap-2">
+                            <div>
+                                <a href="{{route('githublogin')}}" class="btn btn-dark px-5">
+                                    Login with GitHub
+                                </a> 
+                            </div>
+                            <div>
+                                <a href="{{route('googlelogin')}}" class="btn btn-danger px-5">
+                                    Login with Google
+                                </a>
+                            </div>
+                        </div> 
                     </form>
                 </div>
             </div>
