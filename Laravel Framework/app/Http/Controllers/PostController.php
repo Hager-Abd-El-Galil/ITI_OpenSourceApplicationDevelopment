@@ -33,14 +33,6 @@ class PostController extends Controller
         return view('post.create',['users' => $users]);
     }
 
-    public function edit($post)
-    {
-        $users = User::all();
-        $post = Post::find($post);
-
-        return view('post.edit', ['post' => $post,'users' => $users]);
-    }
-
     public function store(StorePostRequest $request)
     {
         $post = Post::create([
@@ -58,6 +50,14 @@ class PostController extends Controller
         }
 
         return to_route('posts.index')->with('success', 'A Post is Created Successfully!');
+    }
+
+    public function edit($post)
+    {
+        $users = User::all();
+        $post = Post::find($post);
+
+        return view('post.edit', ['post' => $post,'users' => $users]);
     }
 
     public function update($post,storePostRequest $request)
