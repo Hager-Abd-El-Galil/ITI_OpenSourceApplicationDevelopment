@@ -14,14 +14,6 @@ class PostController extends Controller
     public function index()
     {
         $allPosts = Post::all();
-
-        foreach($allPosts as $post){
-            $response [] = [
-                'id' => $post->id,
-                'title' => $post->title,
-                'description' => $post->description,
-            ];
-        }
         return PostResource::collection($allPosts);
     }
 
@@ -33,19 +25,20 @@ class PostController extends Controller
 
     public function store(StorePostRequest $request)
     {
-        $post = Post::create([
-            'title' =>  $request->title,
-            'description' => $request->description,
-            'user_id' => $request->post_creator
-        ]);
-
-        if ($request->hasFile('image')) {
+         if ($request->hasFile('image')) {
             $image = $request->file('image');
             $filename = $image->getClientOriginalName();
             $path = Storage::putFileAs('public/posts', $image, $filename);
-            $post->image_path = $path;
-            $post->save();
+        }else{
+            $path = null;
         }
+        
+        $post = Post::create([
+            'title' =>  $request->title,
+            'description' => $request->description,
+            'user_id' => $request->post_creator,
+            'image' => $path
+        ]);
 
         return new PostResource($post);
     }

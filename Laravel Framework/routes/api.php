@@ -4,6 +4,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Hash;
+use App\Http\Controllers\Api\PostController;
 use Illuminate\Validation\ValidationException;
 
 /*
@@ -20,9 +21,12 @@ use Illuminate\Validation\ValidationException;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::get('/posts', [PostController::class, 'index'])->middleware('auth:sanctum');
-Route::get('/posts/{post}', [PostController::class, 'show']);
-Route::post('/posts', [PostController::class, 'store']);
+
+Route::group(['middleware' => ['auth:sanctum']],function () {
+    Route::get('/posts', [PostController::class, 'index']);
+    Route::get('/posts/{post}', [PostController::class, 'show']);
+    Route::post('/posts', [PostController::class, 'store']);
+});
 
 Route::post('/sanctum/token', function (Request $request) {
     $request->validate([
