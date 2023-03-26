@@ -1,0 +1,43 @@
+.has-text-align-left {text-align: right;}
+.has-text-align-right {text-align:left;}
+.wp-block-navigation .wp-block-navigation-item ul {right:auto !important;}
+.skt-fse-about-company-list {padding-right:50px !important;}
+.skt-fse-section5-left ul {padding-left:0px !important; padding-right:15px !important;}
+.skt-fse-offering-content {padding-left:170px !important; padding-right:0px !important;}
+.skt-fse-offering-box .wp-block-columns{padding-left:0px !important; padding-right:15px;}
+.skt-fse-button-area .wp-block-column {padding:0px 10px !important;}
+.skt-fse-section8-left{padding-left: 80px; padding-right:0px !important;}
+.skt-fse-section8-left h2 {padding-right:0px !important;}
+.skt-fse-footer-box ul {padding-left:0px !important; padding-right:15px !important;}
+.skt-fse-section12-box .wp-block-group {border:none;}
+.skt-fse-blog-content {padding-left:20px !important; padding-right:30px !important;}
+.skt-fse-blog-right-side-page {padding-left:0px !important; padding-right:25px !important;}
+.skt-fse-contact-form .wp-block-group {padding-right:0px !important; padding-left:100px;}
+.skt-fse-blog-single-right-area {padding-left:0px !important; padding-right:25px !important;}
+.skt-fse-blog-single-left-area .wp-block-group ul, .skt-fse-blog-right-side-area .wp-block-group ul, .skt-fse-blog-widget-area .wp-block-group ul, .skt-fse-archive-right .wp-block-group ul{padding-right:15px !important; padding-left:0px !important;}
+.wpcf7-form p {text-align:right;}
+.skt-fse-service-menu {padding-right:0px !important; padding-left:60px !important;}
+.skt-fse-service-menu ul{ padding-left:0px !important; padding-right:25px !important;}
+.skt-fse-blog-left-side-area {padding-right:0px !important; padding-left:50px !important;}
+.skt-fse-archive-left {padding-right:0px !important; padding-left:60px !important;}
+.skt-fse-section9-box .wp-block-column:nth-child(2) {padding-left:0px !important; padding-right:15px !important;}
+.wp-block-navigation__submenu-container ul.wp-block-navigation__submenu-container {left:-100% !important;}
+.wp-block-navigation .wp-block-navigation-item ul {left:-100% !important;}
+@media(max-width: 1023px){
+.skt-fse-header-btn .wp-block-button{left:40px; right:auto;}
+.skt-fse-header-menu {right:auto; left:0;}	
+.skt-fse-offering-box .wp-block-columns {padding-left:0px !important; padding-right:0px;}
+.skt-fse-section8-left {padding-left:0px; padding-right:0px !important;}
+.skt-fse-about-company-list {padding-left:0px !important; padding-right:35px !important;}
+.skt-fse-section4 .skt-fse-offering-content {padding-bottom:40px !important;}
+.skt-fse-blog-right-side-page {padding-left:0px !important; padding-right:0px !important;}
+.skt-fse-blog-single-right-area {padding-left:0px !important; padding-right:0px !important;}
+.skt-fse-pagination .wp-block-column, .skt-fse-pagination .post-navigation-link-next {text-align:center !important;}
+.skt-fse-service-menu {padding-right:0px !important; padding-left:0px !important;}
+.skt-fse-blog-content{padding-right:0px !important; padding-left:0px !important;}
+.skt-fse-archive-left, .skt-fse-blog-left-side-area{ padding:0px !important;}
+}
+@media(max-width: 599px){
+.skt-fse-header-btn .wp-block-button{left:40px; right:auto;}
+.skt-fse-header-menu {right:auto; left:0;}	
+}

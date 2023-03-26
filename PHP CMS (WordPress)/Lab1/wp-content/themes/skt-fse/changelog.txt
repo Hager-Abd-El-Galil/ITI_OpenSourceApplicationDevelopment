@@ -1,0 +1,5 @@
+= 1.1 =
+* Issue resolved as per reviewer comments.
+
+= 1.0 =
+* Initial version release.

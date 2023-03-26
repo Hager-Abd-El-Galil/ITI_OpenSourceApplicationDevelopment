@@ -1,0 +1,57 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  color: inherit;
+}
+body h1 {
+  font-size: 2.5rem;
+}
+body h2 {
+  font-size: 2rem;
+}
+body h3 {
+  font-size: 1.75rem;
+}
+body h4 {
+  font-size: 1.5rem;
+}
+body h5 {
+  font-size: 1.25rem;
+}
+body h6 {
+  font-size: 1rem;
+}
+body p {
+  margin-top: 0;
+  margin-bottom: 0.9rem;
+}
+
+img {
+  height: auto;
+}
+
+.wp-site-blocks > * {
+  margin-top: 0!important;
+}
+
+
+.editor-styles-wrapper h1, .editor-styles-wrapper h2, .editor-styles-wrapper h3, .editor-styles-wrapper h4, .editor-styles-wrapper h5, .editor-styles-wrapper h6{font-family: 'Poppins', sans-serif;}
+
+
+.editor-styles-wrapper button,
+.editor-styles-wrapper input,
+.editor-styles-wrapper select,
+.editor-styles-wrapper textarea{font-family: 'Poppins', sans-serif;}

@@ -1,0 +1,68 @@
+@media only screen and (max-width: 1440px) {
+    .menu .navbar-nav .nav-item .nav-link {font-size: 16px;}
+    .menu .navbar-nav .nav-item {margin: 0 5px;}
+}
+
+@media only screen and (max-width: 1240px) {
+    .navbar-brand {max-width: 160px;}
+    .menu .navbar-nav .nav-item .nav-link {font-size: 14px; padding: 8px 5px;}
+    .header-right-section img {width: 25px; height: 25px;}
+    .font-20{font-size: 18px;}
+    h1{font-size: 45px;}
+    h2{font-size: 33px;}
+    h3{font-size: 27px;}
+    h4{font-size: 25px;}
+    h5{font-size: 22px;}
+}
+
+@media only screen and (max-width: 1199px) {
+	.navbar-toggler:focus{ background: #FF6161; }
+    .menu .navbar-nav .nav-item .nav-link {font-size: 16px;}
+	.menu-all-pages-container { background: #172646;}
+	  .menu ul ul {position: static; border-top: unset;background: none;}
+    .menu li:hover ul{display: none;}
+    .menu li:hover ul li{padding: 0;}
+    .menu .navbar-nav li{padding: 0;}
+	.bloggerwp_header .navbar .site-title {z-index:9;} 
+    .menu .navbar-nav li.menu-item-has-children > a:after {display: none;}
+    div#navbarNav {position: absolute; top: 53px; left: 0; right: 0; background-color: #9b9b9b; z-index: 1;}
+    ul.navbar-nav {height: 100vh; padding: 30px; text-align: center; }
+    button.navbar-toggler {position: absolute; right: 15px; top: 50%; transform: translateY(-50%);z-index:9}
+	.menu .navbar-light .navbar-toggler-icon {background-image: url(../images/menu.png); background-size: 22px;}
+    .menu .navbar-light .navbar-toggler {border-color: #fff;}
+    .menu .navbar-nav .nav-item {margin: 2px 10px;}
+}
+@media only screen and (min-width: 1200px) {
+	.menu-item-object-page > .sub-menu {top:63px;}
+	
+	.sub-menu .menu-item-object-page > .sub-menu {top:0px;}
+}
+@media only screen and (max-width: 991px) {
+    h1{font-size: 40px;}
+    h2{font-size: 28px;}
+    h3{font-size: 23px;}
+    h4{font-size: 22px;}
+    h5{font-size: 21px;}
+    .header-right-section {margin-right: 70px;}
+    .form-active { bottom: -90px;}
+    .site-logo img {height: 50px;width: auto;}
+}
+
+@media only screen and (max-width: 767px) {
+    .search-field-form input[type="text"]{width: 300px;}
+	div#navbarNav{}
+}
+@media only screen and (max-width: 575px) {
+    h1{font-size: 30px;}
+    h2{font-size: 23px;}
+    h3{font-size: 21px;}
+    h4{font-size: 21px;}
+    h5{font-size: 20px;}
+    nav.navbar {padding-left: 10px !important; padding-right: 10px !important;}
+    .header-right-section { margin-right: 55px;}
+    .search-field-form input[type="text"] {width: 200px;}
+    .footer-title {height: auto;}
+    .navbar-brand {max-width: 130px;}
+    .font-16-mobile{font-size: 16px;}
+    .search-field-form {right: -57px; }
+}
