@@ -119,16 +119,18 @@ class PostController extends Controller
             $user->email = $userdata->email;
             $user->password = Hash::make($uuid.now());
             $user->auth_type = 'github';
-            $user->save();
+            try {
+                $user->save();
+            } catch (\Illuminate\Database\QueryException $exception) {
+                return redirect('/login')->with('error', 'Duplicate Email Address !');
+            }
             Auth::login($user);
-            return redirect('/home');
             }
 
         else{
-      
             Auth::login($user);
-            return redirect('/home');
         }
+        return redirect('/home');
     }
 
     public function googleredirect(Request $request)
@@ -147,15 +149,18 @@ class PostController extends Controller
             $user->email = $userdata->email;
             $user->password = Hash::make($uuid.now());
             $user->auth_type = 'google';
-            $user->save();
+            try {
+                $user->save();
+            } catch (\Illuminate\Database\QueryException $exception) {
+                return redirect('/login')->with('error', 'Duplicate Email Address !');
+            }
             Auth::login($user);
-            return redirect('/home');
             }
 
         else{
             Auth::login($user);
-            return redirect('/home');
         }
+        return redirect('/home');
     }
 
     public function removeOldPosts()

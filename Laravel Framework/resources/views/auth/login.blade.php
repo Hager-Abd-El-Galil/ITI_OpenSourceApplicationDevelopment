@@ -6,6 +6,14 @@
         <div class="col-md-8 col-lg-5">
             <div class="card py-4" style="border-radius:10px;">
                 <div class="text-center fw-bold fs-2 my-2">{{ __('LOGIN') }}</div>
+                @if(session('error'))
+                    <div class="d-flex justify-content-center align-items-center mb-2" >
+                        <div id ="alert-message" class="col-10 alert alert-danger mt-4 mb-0 alert-dismissible">
+                            {{ session('error') }}
+                            <button type="button" class="close" data-bs-dismiss="alert">&times;</button>
+                        </div>
+                    </div>
+                @endif
                 <div class="card-body col-12 m-0">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
