@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class=" d-flex flex-column justify-content-center align-items-center gap-2" style="height:90vh;">
-    <div class="card col-8 bg-light d-flex flex-column justify-content-center align-items-center">
+<div class="d-flex flex-column justify-content-center align-items-center gap-2" style="height:90vh;">
+    <div class="card col-7 bg-light d-flex flex-column justify-content-center align-items-center">
         <div class="d-flex justify-content-center align-items-center">
             <img
                 src="
