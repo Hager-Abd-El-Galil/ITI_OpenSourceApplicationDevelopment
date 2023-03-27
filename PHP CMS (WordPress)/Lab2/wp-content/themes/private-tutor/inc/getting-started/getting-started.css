@@ -1,0 +1,128 @@
+/*About theme*/
+.appearance_page_private_tutor_guide #wpwrap{
+    color: #333;
+}
+.intro span {
+    color: #000;
+    font-size: 12px;
+    text-transform: none;
+}
+.col-left{
+	width: 61%;
+	float: left;
+	padding: 0 20px;
+}
+.col-right{
+	width: 33%;
+	float: right;
+}
+.col-right img{
+	width: 100%;
+}
+.wrapper-info h3 {
+    text-transform: uppercase;
+    color: #D64E3F;
+    font-size: 18px;
+}
+.wrapper-info h4 {
+    margin: 0;
+    color: #333;
+    font-size: 15px;
+}
+.wrapper-info a {
+    text-decoration: none;
+}
+#wpcontent, #wpfooter {
+    margin-right: 20px;
+}
+.centerbold a {
+    color: #fff;
+    padding: 9px;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 14px;
+    background: #D64E3F;
+    transition: 0.3s;
+}
+.centerbold a:hover {
+    background: #fff;
+    border: solid 2px #D64E3F;
+    color: #D64E3F;
+}
+.centerbold {
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 12px 26px -9px rgba(0,0,0,0.5);
+    border: 1px solid #d8d6d6;
+}
+.secondhr{
+    margin-top: 20px;
+}
+.firsthr{
+    margin-bottom:20px;
+}
+.col-left p {
+    color: #2e2e2e;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.col-left-inner img {
+    width: 100%;
+    margin-bottom: 15px;
+    border: solid 1px #ccc;
+}
+.intro-text img {
+    float:left; 
+    box-shadow: 0 0 15px 0px #ddd;
+    background: #fff;
+}
+img.table-img {
+    width: 100%;
+}
+.col-left-inner {
+    width: 100%;
+    float: left;
+}
+.feature{
+    float: left;
+    width: 100%;
+}
+.col-md-3 {
+    width: 25%;
+    float: left;
+}
+.service {
+    width: 100%;
+    float: left;
+    border-top: solid 1px #ccc;
+}
+.started ul {
+    font-size: 15px;
+}
+.lz-6 {
+    width: 45%;
+    float: left;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.lz-6 img {
+    width: auto;
+}
+.lz-4 {
+    width: 47%;
+    float: left;
+    padding: 0 7px;
+    text-align: center;
+}
+.free-doc {
+    width: 100%;
+    border-bottom: solid 1px #ccc;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.start-notice {
+    margin:0;
+}

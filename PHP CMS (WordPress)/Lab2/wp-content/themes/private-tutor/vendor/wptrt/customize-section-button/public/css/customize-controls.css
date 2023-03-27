@@ -1,0 +1,40 @@
+.control-section-wptrt-button .accordion-section-title:focus,
+.control-section-wptrt-button .accordion-section-title:hover {
+    background-color: #fff;
+}
+.control-section-wptrt-button .accordion-section-title {
+    padding-right: 10px !important;
+}
+.control-section-wptrt-button .accordion-section-title .button {
+    margin-top: -4px;
+    margin-left: 8px;
+    font-weight: 400;
+}
+.rtl .control-section-wptrt-button .accordion-section-title .button {
+    margin-left: 0;
+    margin-right: 8px;
+}
+
+li#customize-control-private_tutor_logo_top_padding,
+li#customize-control-private_tutor_logo_bottom_padding,
+li#customize-control-private_tutor_logo_left_padding,
+li#customize-control-private_tutor_logo_right_padding{
+    clear: none;
+    width: 22%;
+    margin-right: 10px;
+}
+li#customize-control-private_tutor_logo_right_padding{
+    margin: 0;
+}
+input#_customize-input-private_tutor_logo_padding{
+    display: none;
+}
+li#customize-control-private_tutor_logo_padding{
+    margin-bottom: 0;
+}
+span#_customize-description-private_tutor_logo_top_padding,
+span#_customize-description-private_tutor_logo_bottom_padding,
+span#_customize-description-private_tutor_logo_left_padding,
+span#_customize-description-private_tutor_logo_right_padding{
+    font-weight: 600;
+}

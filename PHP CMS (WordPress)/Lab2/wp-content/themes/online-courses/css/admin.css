@@ -1,0 +1,118 @@
+/*FontAwesome Icon Styles*/
+.online-courses-type-icon {
+  overflow: hidden;
+}
+
+.online-courses-selected-icon {
+  background: #f6f6f6;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 1px solid #eee;
+  position: relative;
+  margin-right: 45px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.online-courses-selected-icon .fa {
+  line-height: 45px;
+  display: block;
+}
+
+.online-courses-selected-icon span {
+  position: absolute;
+  background: #f6f6f6;
+  right: -45px;
+  top: -1px;
+  height: 45px;
+  width: 45px;
+  border: 1px solid #eee;
+  font-size: 20px;
+}
+
+.online-courses-icon-list {
+  height: 215px;
+  overflow-y: scroll;
+  font-size: 18px;
+  border: 1px solid #eee;
+  border-right: 0;
+  border-top: 0;
+  padding-bottom: 4%;
+  display: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.online-courses-icon-list li {
+  float: left;
+  margin: 4% 3% 0;
+  height: 40px;
+  width: 16%;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #eee;
+}
+
+.online-courses-icon-list li:hover {
+  background: #333;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+.online-courses-icon-list li.icon-active {
+  background: #0073aa;
+  border: 1px solid #0073aa;
+  color: #fff;
+}
+
+/*User stick note*/
+h3.sticky_title {
+  margin-top: 12px;
+  margin-bottom: 11px;
+}
+
+span.sticky_info_row {
+  display: block;
+  line-height: 23px;
+}
+
+label.row-element {
+  font-weight: bold;
+}
+
+label.row-element.more-detail {
+  color: #ff0000;
+}
+
+.customize-text_editor {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.customize-text_editor_desc a {
+  background-color: #098817;
+  padding: 4px;
+  color: #fff;
+  border-radius: 3px;
+  margin: 2px 0;
+  display: inline-block;
+  transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+}
+.customize-text_editor_desc a:hover {
+  background-color: #fff;
+  color: #098817;
+}
+
+.customize-text_editor_desc a:focus {
+  box-shadow: 0 0 0 1px #5bd965, 0 0 2px 1px rgba(31, 190, 30, 0.8);
+}
+.customize-text_editor_desc span {
+  padding: 2px;
+  margin: 0;
+  display: inline-block;
+}

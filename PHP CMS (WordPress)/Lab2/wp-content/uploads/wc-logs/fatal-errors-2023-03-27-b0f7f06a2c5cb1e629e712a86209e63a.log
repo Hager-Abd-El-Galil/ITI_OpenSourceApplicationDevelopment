@@ -1,0 +1,18 @@
+2023-03-27T09:12:25+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-admin\includes\class-wp-filesystem-direct.php on line 66
+
+2023-03-27T10:45:59+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-includes\formatting.php on line 4538
+
+elds\class-name.php on line 559
+
+2023-03-27T10:46:33+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-content\plugins\jetpack\jetpack_vendor\automattic\jetpack-sync\src\modules\class-constants.php on line 15
+
+2023-03-27T10:59:13+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-content\plugins\woocommerce\includes\wc-template-functions.php on line 77
+
+2023-03-27T10:59:13+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-includes\capabilities.php on line 44
+
+2023-03-27T10:59:58+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\orm\lib\Doctrine\ORM\Query.php on line 4
+
+2023-03-27T11:00:01+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-includes\functions.php on line 651
+
+2023-03-27T11:04:09+00:00 CRITICAL Maximum execution time of 120 seconds exceeded in C:\xampp\htdocs\Lab2\wp-content\plugins\google-listings-and-ads\vendor\google\apiclient-services\src\ShoppingContent.php on line 35
+

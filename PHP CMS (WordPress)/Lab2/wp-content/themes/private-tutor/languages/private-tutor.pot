@@ -1,0 +1,448 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Private Tutor\n"
+"Last-Translator: \n"
+"Language-Team: Luzuk <support@luzuk.com>\n"
+"Language: English\n"
+"MIME-Version: 0.1\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: 404.php:16
+msgid 'Oops! That page can&rsquo;t be found.'
+msgstr ""
+
+#: 404.php:18
+msgid 'Return to home page'
+msgstr ""
+
+#: 404.php:22
+msgid 'It looks like nothing was found at this location. Maybe try a search?'
+msgstr ""
+
+#: archive.php:48
+#: archive.php:81
+#: archive.php:114
+#: archive.php:146
+#: archive.php:180
+#: archive.php:215
+#: archive.php:248
+#: index.php:48
+#: index.php:83
+#: index.php:117
+#: index.php:152
+#: index.php:188
+#: index.php:224
+#: index.php:254
+#: search.php:50
+#: search.php:86
+#: search.php:122
+#: search.php:157
+#: search.php:195
+#: search.php:234
+#: search.php:273
+msgid 'Previous page'
+msgstr ""
+
+#: archive.php:49
+#: archive.php:82
+#: archive.php:115
+#: archive.php:147
+#: archive.php:181
+#: archive.php:216
+#: archive.php:249
+#: index.php:49
+#: index.php:84
+#: index.php:118
+#: index.php:153
+#: index.php:189
+#: index.php:225
+#: index.php:255
+#: search.php:51
+#: search.php:87
+#: search.php:123
+#: search.php:158
+#: search.php:196
+#: search.php:235
+#: search.php:274
+msgid 'Next page'
+msgstr ""
+
+#: archive.php:50
+#: archive.php:83
+#: archive.php:116
+#: archive.php:148
+#: archive.php:182
+#: archive.php:217
+#: archive.php:250
+#: index.php:50
+#: index.php:85
+#: index.php:119
+#: index.php:154
+#: index.php:190
+#: index.php:226
+#: index.php:256
+#: search.php:52
+#: search.php:88
+#: search.php:124
+#: search.php:159
+#: search.php:197
+#: search.php:236
+#: search.php:275
+msgid 'Page'
+msgstr ""
+
+#: comments.php:22
+msgid 'One thought on &ldquo;%s&rdquo;'
+msgstr ""
+
+#: comments.php:31
+msgid 'comments title'
+msgstr ""
+
+#: comments.php:65
+msgid 'Comments are closed.'
+msgstr ""
+
+#: header.php:26
+msgid 'Skip to content'
+msgstr ""
+
+#: header.php:60
+msgid 'Open Menu'
+msgstr ""
+
+#: header.php:64
+msgid 'Top Menu'
+msgstr ""
+
+#: header.php:74
+msgid 'Close Menu'
+msgstr ""
+
+#: index.php:18
+msgid 'Posts'
+msgstr ""
+
+#: searchform.php:15
+msgid 'Search for:'
+msgstr ""
+
+#: searchform.php:15
+msgid 'Search for:'
+msgstr ""
+
+#: searchform.php:16
+#: searchform.php:18
+msgid 'Search'
+msgstr ""
+
+#: searchform.php:16
+msgid 'placeholder'
+msgstr ""
+
+#: searchform.php:18
+msgid 'submit button'
+msgstr ""
+
+#: search.php:17
+#: template-parts/post/content-none.php:14
+msgid 'Nothing Found'
+msgstr ""
+
+#: search.php:15
+msgid 'Search Results for: %s'
+msgstr ""
+
+#: search.php:40
+#: search.php:76
+#: search.php:112
+#: search.php:147
+#: search.php:185
+#: search.php:224
+#: search.php:263
+msgid 'Sorry, but nothing matched your search terms. Please try again with some different keywords.'
+msgstr ""
+
+#: single.php:33
+#: single.php:59
+#: single.php:84
+#: single.php:109
+#: single.php:136
+#: single.php:164
+#: single.php:191
+msgid 'Previous Post'
+msgstr ""
+
+#: single.php:33
+#: single.php:59
+#: single.php:84
+#: single.php:109
+#: single.php:136
+#: single.php:164
+#: single.php:191
+msgid 'Previous'
+msgstr ""
+
+#: single.php:34
+#: single.php:60
+#: single.php:85
+#: single.php:110
+#: single.php:135
+#: single.php:165
+#: single.php:192
+msgid 'Next Post'
+msgstr ""
+
+#: single.php:34
+#: single.php:60
+#: single.php:85
+#: single.php:110
+#: single.php:135
+#: single.php:165
+#: single.php:192
+msgid 'Next'
+msgstr ""
+
+#: functions.php:39
+msgid 'Primary Menu'
+msgstr ""
+
+#: functions.php:71
+msgid 'Welcome to Luzuk!!'
+msgstr ""
+
+#: functions.php:72
+msgid 'Thank you for choosing Private Tutor theme. It will be our pleasure to have you on our Welcome page to serve you better.'
+msgstr ""
+
+#: functions.php:73
+msgid 'GET STARTED'
+msgstr ""
+
+#: functions.php:79
+msgid "Blog Sidebar"
+msgstr ""
+
+#: functions.php:81
+msgid 'Add widgets here to appear in your sidebar on blog posts and archive pages.'
+msgstr ""
+
+#: functions.php:91
+#: functions.php:101
+msgid 'Add widgets here to appear in your pages and posts'
+msgstr ""
+
+#: functions.php:89
+msgid 'Sidebar 2'
+msgstr ""
+
+#: functions.php:99
+msgid 'Sidebar 3'
+msgstr ""
+
+#: functions.php:109
+msgid "Footer 1"
+msgstr ""
+
+#: functions.php:119
+msgid "Footer 2"
+msgstr ""
+
+#: functions.php:129
+msgid "Footer 3"
+msgstr ""
+
+#: functions.php:139
+msgid "Footer 4"
+msgstr ""
+
+#: functions.php:111
+#: functions.php:121
+#: functions.php:131
+#: functions.php:141
+msgid 'Add widgets here to appear in your footer.'
+msgstr ""
+
+#: functions.php:213
+msgid 'Private Tutor WordPress Theme'
+msgstr ""
+
+#: template-parts/footer/site-info.php:12
+msgid 'By Luzuk'
+msgstr ""
+
+#: footer.php:22
+msgid 'Top'
+msgstr ""
+
+#: template-parts/page/content-page.php:23
+msgid 'Pages:'
+msgstr ""
+
+#: template-parts/post/content-none.php:23
+msgid 'Ready to publish your first post? <a href="%s">Get started here</a>.'
+msgstr ""
+
+#: template-parts/post/content-none.php:29
+msgid 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.'
+msgstr ""
+
+#: template-parts/post/content.php:18
+#: template-parts/post/content-single.php:19
+#: template-parts/post/grid-layout.php:18
+msgid '0 Comments'
+msgstr ""
+
+#: template-parts/post/content.php:25
+#: template-parts/post/grid-layout.php:25
+#: page-template/custom-home-page.php:47
+msgid 'READ MORE'
+msgstr ""
+
+#: inc/customizer.php:17
+#: inc/customizer.php:312
+msgid 'Private Tutor Pro'
+msgstr ""
+
+#: inc/customizer.php:19
+#: inc/customizer.php:314
+msgid 'Go Pro'
+msgstr ""
+
+#: inc/customizer.php:54
+msgid 'Logo Padding'
+msgstr ""
+
+#: inc/customizer.php:64
+msgid 'Top'
+msgstr ""
+
+#: inc/customizer.php:74
+msgid 'Bottom'
+msgstr ""
+
+#: inc/customizer.php:84
+msgid 'Left'
+msgstr ""
+
+#: inc/customizer.php:94
+msgid 'Right'
+msgstr ""
+
+#: inc/customizer.php:104
+msgid 'Show / Hide Site Title'
+msgstr ""
+
+#: inc/customizer.php:114
+msgid 'Site Title Font Size'
+msgstr ""
+
+#: inc/customizer.php:124
+msgid 'Show / Hide Site Tagline'
+msgstr ""
+
+#: inc/customizer.php:134
+msgid 'Site Tagline Font Size'
+msgstr ""
+
+#: inc/customizer.php:142
+msgid 'Theme Settings'
+msgstr ""
+
+#: inc/customizer.php:143
+msgid 'Description of what this panel does.'
+msgstr ""
+
+#: inc/customizer.php:147
+msgid "General Settings"
+msgstr ""
+
+#: inc/customizer.php:158
+msgid 'Do you want this section'
+msgstr ""
+
+#: inc/customizer.php:161
+msgid "Left Sidebar"
+msgstr ""
+
+#: inc/customizer.php:162
+msgid "Right Sidebar"
+msgstr ""
+
+#: inc/customizer.php:163
+msgid "One Column"
+msgstr ""
+
+#: inc/customizer.php:164
+msgid "Three Columns"
+msgstr ""
+
+#: inc/customizer.php:165
+msgid "Four Columns"
+msgstr ""
+
+#: inc/customizer.php:166
+msgid "Grid Layout"
+msgstr ""
+
+#: inc/customizer.php:172
+msgid 'Slider Settings'
+msgstr ""
+
+#: inc/customizer.php:183
+msgid 'Show / Hide slider'
+msgstr ""
+
+#: inc/customizer.php:193
+msgid 'Select Slide Image Page'
+msgstr ""
+
+#: inc/customizer.php:194
+msgid 'Image Size (625px x 450px)'
+msgstr ""
+
+#: inc/customizer.php:206
+msgid 'Slider Excerpt Length'
+msgstr ""
+
+#: inc/customizer.php:212
+msgid 'Subjects Section'
+msgstr ""
+
+#: inc/customizer.php:213
+msgid '<b>Note :</b> This section will appear below the slider.'
+msgstr ""
+
+#: inc/customizer.php:223
+msgid 'Add Section Small Heading'
+msgstr ""
+
+#: inc/customizer.php:233
+msgid 'Add Section Heading'
+msgstr ""
+
+#: inc/customizer.php:256
+msgid 'Select Category to display Post'
+msgstr ""
+
+#: inc/customizer.php:266
+msgid 'Section Top Bottom Padding'
+msgstr ""
+
+#: inc/customizer.php:272
+#: inc/customizer.php:292
+msgid 'Footer Text'
+msgstr ""
+
+#: inc/customizer.php:283
+msgid 'Show / Hide Back to Top'
+msgstr ""
+
+#: inc/customizer.php:304
+msgid 'Copyright Top Bottom Padding'
+msgstr ""
