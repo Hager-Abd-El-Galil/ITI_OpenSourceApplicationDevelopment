@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="./employee.css" ?>
+<employees>
+    <!--Employee One-->
+    <employee isbn="1">
+        <name>Ahmed Ali</name>
+        <phones>
+            <phone type="home">035611296</phone>
+            <phone type="work">035610676</phone>
+            <phone type="mobile">01201122815</phone>
+        </phones>
+        <addresses>
+            <address>
+                <Street>119 st</Street>
+                <BuildingNumber>6</BuildingNumber>
+                <Region>ElMaamora</Region>
+                <City>Alexandria</City>
+                <Country>Eqypt</Country>
+            </address>
+        </addresses>
+        <email>Ahmed@gmail.com</email>
+    </employee>
+
+    <!--Employee Two-->
+    <employee isbn="2">
+        <name>Amr Hesham</name>
+        <phones>
+            <phone type="home">035411096</phone>
+            <phone type="work">034400670</phone>
+            <phone type="mobile">01101100813</phone>
+        </phones>
+        <addresses>
+            <address>
+                <Street>268 st</Street>
+                <BuildingNumber>7</BuildingNumber>
+                <Region>Miami</Region>
+                <City>Alexandria</City>
+                <Country>Eqypt</Country>
+            </address>
+        </addresses>
+        <email>Amr@gmail.com</email>
+    </employee>
+
+    <!--Employee Three-->
+    <employee isbn="3">
+        <name>Alaa Ahmed</name>
+        <phones>
+            <phone type="home">035511060</phone>
+            <phone type="work">035410870</phone>
+            <phone type="mobile">010043122815</phone>
+        </phones>
+        <addresses>
+            <address>
+                <Street>El hosary st</Street>
+                <BuildingNumber>6</BuildingNumber>
+                <Region>6 October</Region>
+                <City>Cairo</City>
+                <Country>Eqypt</Country>
+            </address>
+        </addresses>
+        <email>Alaa@gmail.com</email>
+    </employee>
+    
+</employees>

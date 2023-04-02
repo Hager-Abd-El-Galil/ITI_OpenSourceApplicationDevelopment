@@ -1,0 +1,227 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/css" href="./library.css"?>
+<library>
+    <location>Alexandria</location>
+    <description>Library of Books</description>
+    <librarian>Amir Alaa</librarian>
+    <Books>
+        <!--Book 1-->
+        <book isbn="12">
+            <title>Book1</title>
+            <author>Ahmed Mahmoud</author>
+            <preface>Preface of Book1</preface>
+            <parts>
+                <!--Book 1 Part 1-->
+                <part isbn="113">
+                    <title>Part1</title>
+                    <chapters>
+                        <!--Book Part 1 Chapter 1-->
+                        <chapter isbn="1134">
+                            <title>Chapter1</title>
+                            <summary>Summary of Chapter1</summary>
+                            <sections>
+                                <!--Book 1 Part 1 Chapter 1 Section 1-->
+                                <section isbn="11341">
+                                    <paragraphs>
+                                        <paragraph isbn="123411">Paragraph1</paragraph>
+                                        <paragraph isbn="123412">Paragraph2</paragraph>
+                                        <paragraph isbn="123413">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <!--Book 1 Part 1 Chapter 1 Section 2-->
+                                <section isbn="11342">
+                                    <paragraphs>
+                                        <paragraph isbn="113421">Paragraph1</paragraph>
+                                        <paragraph isbn="113422">Paragraph2</paragraph>
+                                        <paragraph isbn="113423">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <!--Book 1 Part 1 Chapter 2-->
+                        <chapter isbn="1135">
+                            <title>Chapter2</title>
+                            <summary>Summary of Chapter2</summary>
+                            <sections>
+                                <section isbn="11351">
+                                    <paragraphs>
+                                        <paragraph isbn="113511">Paragraph1</paragraph>
+                                        <paragraph isbn="113512">Paragraph2</paragraph>
+                                        <paragraph isbn="113513">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <section isbn="12352">
+                                    <paragraphs>
+                                        <paragraph isbn="113521">Paragraph1</paragraph>
+                                        <paragraph isbn="113522">Paragraph2</paragraph>
+                                        <paragraph isbn="113523">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+
+                <!--Book 1 Part 2-->
+                <part isbn="123">
+                    <title>Part2</title>
+                    <chapters>
+                        <!--Book 1 Part 2 Chapter 1-->
+                        <chapter isbn="1234">
+                            <title>Chapter1</title>
+                            <summary>Summary of Chapter1</summary>
+                            <sections>
+                                <!--Book 1 Part 2 Chapter 1 Section 1-->
+                                <section isbn="12341">
+                                    <paragraphs>
+                                        <paragraph isbn="123411">Paragraph1</paragraph>
+                                        <paragraph isbn="123412">Paragraph2</paragraph>
+                                        <paragraph isbn="123413">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <!--Book 1 Part 2 Chapter 1 Section 2-->
+                                <section isbn="12342">
+                                    <paragraphs>
+                                        <paragraph isbn="123421">Paragraph1</paragraph>
+                                        <paragraph isbn="123422">Paragraph2</paragraph>
+                                        <paragraph isbn="123423">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <!--Book 1 Part 2 Chapter 2-->
+                        <chapter isbn="1235">
+                            <title>Chapter2</title>
+                            <summary>Summary of Chapter2</summary>
+                            <sections>
+                                <section isbn="12351">
+                                    <paragraphs>
+                                        <paragraph isbn="123511">Paragraph1</paragraph>
+                                        <paragraph isbn="123512">Paragraph2</paragraph>
+                                        <paragraph isbn="123513">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <section isbn="12352">
+                                    <paragraphs>
+                                        <paragraph isbn="123521">Paragraph1</paragraph>
+                                        <paragraph isbn="123522">Paragraph2</paragraph>
+                                        <paragraph isbn="123523">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+        <!--Book 2-->
+        <book isbn="22">
+            <title>Book2</title>
+            <author>Ali Mohammed</author>
+            <preface>Preface of Book2</preface>
+            <parts>
+                <!--Book 2 Part 1-->
+                <part isbn="213">
+                    <title>Part1</title>
+                    <chapters>
+                        <!--Book 2 Part 1 Chapter 1-->
+                        <chapter isbn="2134">
+                            <title>Chapter1</title>
+                            <summary>Summary of Chapter1</summary>
+                            <sections>
+                                <!--Book Part 1 Chapter 1 Section 1-->
+                                <section isbn="21341">
+                                    <paragraphs>
+                                        <paragraph isbn="223411">Paragraph1</paragraph>
+                                        <paragraph isbn="223412">Paragraph2</paragraph>
+                                        <paragraph isbn="223413">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <!--Book Part 1 Chapter 1 Section 2-->
+                                <section isbn="21342">
+                                    <paragraphs>
+                                        <paragraph isbn="213421">Paragraph1</paragraph>
+                                        <paragraph isbn="213422">Paragraph2</paragraph>
+                                        <paragraph isbn="213423">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <!--Book 2 Part 1 Chapter 2-->
+                        <chapter isbn="1135">
+                            <title>Chapter2</title>
+                            <summary>Summary of Chapter2</summary>
+                            <sections>
+                                <section isbn="21351">
+                                    <paragraphs>
+                                        <paragraph isbn="213511">Paragraph1</paragraph>
+                                        <paragraph isbn="213512">Paragraph2</paragraph>
+                                        <paragraph isbn="213513">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <section isbn="22352">
+                                    <paragraphs>
+                                        <paragraph isbn="213521">Paragraph1</paragraph>
+                                        <paragraph isbn="213522">Paragraph2</paragraph>
+                                        <paragraph isbn="213523">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+
+                <!--Book 2 Part 2-->
+                <part isbn="223">
+                    <title>Part2</title>
+                    <chapters>
+                        <!--Book 2 Part 2 Chapter 1-->
+                        <chapter isbn="2234">
+                            <title>Chapter1</title>
+                            <summary>Summary of Chapter1</summary>
+                            <sections>
+                                <!--Book 2 Part 2 Chapter 1 Section 1-->
+                                <section isbn="22341">
+                                    <paragraphs>
+                                        <paragraph isbn="223411">Paragraph1</paragraph>
+                                        <paragraph isbn="223412">Paragraph2</paragraph>
+                                        <paragraph isbn="223413">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <!--Book Part 2 Chapter 1 Section 2-->
+                                <section isbn="22342">
+                                    <paragraphs>
+                                        <paragraph isbn="223421">Paragraph1</paragraph>
+                                        <paragraph isbn="223422">Paragraph2</paragraph>
+                                        <paragraph isbn="223423">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                        <!--Book 2 Part 2 Chapter 2-->
+                        <chapter isbn="2235">
+                            <title>Chapter2</title>
+                            <summary>Summary of Chapter2</summary>
+                            <sections>
+                                <section isbn="22351">
+                                    <paragraphs>
+                                        <paragraph isbn="223511">Paragraph1</paragraph>
+                                        <paragraph isbn="223512">Paragraph2</paragraph>
+                                        <paragraph isbn="223513">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                                <section isbn="22352">
+                                    <paragraphs>
+                                        <paragraph isbn="223521">Paragraph1</paragraph>
+                                        <paragraph isbn="223522">Paragraph2</paragraph>
+                                        <paragraph isbn="223523">Paragraph3</paragraph>
+                                    </paragraphs>
+                                </section>
+                            </sections>
+                        </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+    </Books>
+</library>  
