@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="./employee.css" ?>
+<employees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="file:///D:/ITI/ITI%20-%20Open%20Source%20Development/XML%20Fundamentals/Lab3/employees%20XSD%20Schema/employee.xsd">
+	<!--Employee One-->
+	<employee isbn="1">
+		<name>Ahmed Ali</name>
+		<phones>
+			<phone type="home">035611296</phone>
+		</phones>
+		<addresses>
+			<address>
+				<Street>119 st</Street>
+				<BuildingNumber>6</BuildingNumber>
+				<Region>ElMaamora</Region>
+				<City>Alexandria</City>
+				<Country>Eqypt</Country>
+			</address>
+		</addresses>
+		<email>Ahmed@gmail.com</email>
+	</employee>
+	<!--Employee Two-->
+	<employee isbn="2">
+		<name>Amr Hesham</name>
+		<phones>
+			<phone type="home">035411096</phone>
+		</phones>
+		<addresses>
+			<address>
+				<Street>268 st</Street>
+				<BuildingNumber>7</BuildingNumber>
+				<Region>Miami</Region>
+				<City>Alexandria</City>
+				<Country>Eqypt</Country>
+			</address>
+		</addresses>
+		<email>Amr@gmail.com</email>
+	</employee>
+	<!--Employee Three-->
+	<employee isbn="3">
+		<name>Alaa Ahmed</name>
+		<phones>
+			<phone type="home">035511060</phone>
+		</phones>
+		<addresses>
+			<address>
+				<Street>El hosary st</Street>
+				<BuildingNumber>6</BuildingNumber>
+				<Region>6 October</Region>
+				<City>Cairo</City>
+				<Country>Eqypt</Country>
+			</address>
+		</addresses>
+		<email>Alaa@gmail.com</email>
+	</employee>
+</employees>
