@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="employee.css"?>
+<employees>
+  <employee>
+    <id>12341d0e88a74</id>
+    <name>Amr</name>
+    <email>Amr@gmail.com</email>
+    <phone>01101433755</phone>
+    <address>6 October, Cairo, Egypt</address>
+  </employee>
+  <employee>
+    <id>46341d8e48a55</id>
+    <name>Ahmad</name>
+    <email>Ahmed@gmail.com</email>
+    <phone>010011116988</phone>
+    <address>Miami, Alexandria, Egypt</address>
+  </employee>
+  <employee>
+    <id>64344524480d0</id>
+    <name>Mai</name>
+    <email>Mai@gmail.com</email>
+    <phone>01104531269</phone>
+    <address>Smouha</address>
+  </employee>
+</employees>
