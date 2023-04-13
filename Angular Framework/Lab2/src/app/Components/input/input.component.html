@@ -1,0 +1,20 @@
+<div class="card col-12">
+  <div class="card-body my-2 px-5">
+    <h2 class="fw-bold text-center text-info mb-2">PART 1</h2>
+    <input
+      type="text"
+      class="form-control mb-2"
+      [value]="text"
+      placeholder="Enter Your Text"
+      [(ngModel)]="text"
+    />
+    <p>Your Entered Text: <b>{{ text }}</b></p>
+    <input
+      type="button"
+      class="btn btn-info"
+      value="RESET"
+      (click)="resetInput()"
+    />
+  </div>
+</div>
+

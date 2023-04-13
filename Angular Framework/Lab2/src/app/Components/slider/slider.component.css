@@ -1,0 +1,27 @@
+.imageslider {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
