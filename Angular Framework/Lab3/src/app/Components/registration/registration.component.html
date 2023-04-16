@@ -1,0 +1,77 @@
+<div>
+  <div class="bg-success text-white fw-bold fs-4 text-center">
+    Create New Student
+  </div>
+  <form class="d-flex flex-column justify-content-center gap-2 border p-5">
+    <div class="input-group flex-nowrap">
+      <div class="input-group-prepend">
+        <span class="input-group-text"
+          ><i class="fas fa-user-alt" style="font-size: 23px"></i
+        ></span>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Student Name"
+        name="studentName"
+        [ngClass]="{
+          'is-valid': studentName && studentName.length >= 3,
+          'is-invalid': !studentName || studentName.length < 3
+        }"
+        [(ngModel)]="studentName"
+      />
+    </div>
+    <!--Student Name Validation-->
+    <div
+      class="text-success"
+      *ngIf="studentName && studentName.length >= 3; else invalidNameBlock"
+    >
+      <p><i class="fa fa-check"></i> Valid Student Name</p>
+    </div>
+    <ng-template #invalidNameBlock>
+      <div class="text-danger">
+        <p><i class="fa fa-close"></i> inValid Student Name <br/>*Length Must be Greater than 3</p>
+      </div>
+    </ng-template>
+
+    <div class="input-group flex-nowrap">
+      <div class="input-group-prepend">
+        <span class="input-group-text"
+          ><i class="fas fa-user-edit" style="font-size: 23px"></i
+        ></span>
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Student Age"
+        name="studentAge"
+        [ngClass]="{
+          'is-valid': studentAge && +studentAge > 20 && +studentAge < 40,
+          'is-invalid': +studentAge <= 20 || +studentAge >= 40
+        }"
+        [(ngModel)]="studentAge"
+      />
+    </div>
+    <!--Student Age Validation-->
+    <div
+      class="text-success"
+      *ngIf="studentAge && +studentAge > 20 && +studentAge < 40; else invalidAgeBlock"
+    >
+      <p><i class="fa fa-check"></i> Valid Student Age</p>
+    </div>
+    <ng-template #invalidAgeBlock>
+      <div class="text-danger" *ngIf="+studentAge <= 20 || +studentAge >= 40">
+        <p><i class="fa fa-close"></i> inValid Student Age <br/>*Allowed Range 21-39</p>
+      </div>
+    </ng-template>
+
+    <div>
+      <input
+        type="button"
+        class="form-control btn btn-success"
+        value="ADD"
+        (click)="Add()"
+      />
+    </div>
+  </form>
+</div>
