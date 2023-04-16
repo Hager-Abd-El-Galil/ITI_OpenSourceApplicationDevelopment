@@ -1,27 +1,14 @@
-# Lab2
+# Angular Framework
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+## Lab1
+![lab1](https://user-images.githubusercontent.com/81237428/232334624-66ee00d2-7713-4a15-ac5b-14fcde8a5913.PNG)
 
-## Development server
+## Lab2
+https://user-images.githubusercontent.com/81237428/232334650-9dd18182-22f4-45a1-8375-14754fea3d8f.mp4
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Lab3
+https://user-images.githubusercontent.com/81237428/232334680-71912ed6-05f5-4939-aecc-2dc65eb7309f.mp4
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
