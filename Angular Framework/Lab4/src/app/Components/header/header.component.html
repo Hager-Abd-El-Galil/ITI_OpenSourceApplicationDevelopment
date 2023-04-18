@@ -1,0 +1,53 @@
+<div class="container-fluid">
+  <div class="row fs-4 fw-light">
+    <nav class="navbar navbar-expand-lg justify-content-center bg-dark p-1">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler p-1 rounded-2 border-2 ms-auto bg-dark-subtle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNav"
+        >
+          <div class="navbar-nav">
+            <a
+              class="nav-link text-secondary mx-lg-4"
+              aria-current="page"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLinkActive="text-success"
+              routerLink="/"
+              >Registration</a
+            >
+            <a
+              class="nav-link text-secondary link-light mx-lg-4"
+              routerLinkActive="text-success"
+              [routerLinkActiveOptions]="{ exact: true }"
+              routerLink="/students"
+              >Students</a
+            >
+            <a
+              class="nav-link text-secondary link-light mx-lg-4"
+              routerLinkActive="text-success"
+              routerLink="/students/5"
+              >student Details</a
+            >
+            <a
+              class="nav-link text-secondary link-light mx-lg-4"
+              routerLinkActive="text-success"
+              routerLink="/error"
+              >Error</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

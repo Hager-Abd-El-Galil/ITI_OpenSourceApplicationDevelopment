@@ -1,0 +1,32 @@
+.contact-social {
+    margin-top: 25px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+    text-align: center;
+}
+
+.contact-social ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.contact-social ul li a {
+    border: 1px solid #8b9199;
+    border-radius: 50%;
+    color: #8b9199;
+    display: inline-block;
+    height: 40px;
+    margin: 0 10px;
+    padding-top: 7px;
+    transition: all 0.4s ease 0s;
+    width: 40px;
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    background: #1A1E25;
+    color: #868c96;
+}

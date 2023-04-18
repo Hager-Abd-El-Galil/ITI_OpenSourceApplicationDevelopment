@@ -1,0 +1,24 @@
+<div>
+  <div class="bg-light border text-success fw-bold fs-4 text-center">
+    All Students Data
+  </div>
+  <table class="table table-striped text-center alert border">
+    <thead class="bg-success text-white">
+      <tr>
+        <th scope="col" class="px-3">#</th>
+        <th scope="col" class="px-5">Name</th>
+        <th scope="col" class="px-5">Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="allStudentsList.length === 0">
+        <td colspan="6">No Data in the Table</td>
+      </tr>
+      <tr *ngFor="let student of allStudentsList; index as i">
+        <td>{{i+1}}</td>
+        <td>{{student.name}}</td>
+        <td>{{student.age}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
