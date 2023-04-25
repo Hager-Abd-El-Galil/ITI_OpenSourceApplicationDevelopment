@@ -1,0 +1,123 @@
+<div class="d-flex justify-content-center" *ngIf="student; else spinner">
+  <div class="col-10 col-md-4 col-lg-3">
+    <div
+      class="alert alert-success text-success p-0 pt-3 text-start px-3"
+      *ngIf="isUpdated"
+    >
+      <p>Student has been Updated Successfully!</p>
+    </div>
+    <div class="bg-secondary text-white fw-bold fs-4">Update Student</div>
+    <form
+      class="form d-flex flex-column justify-content-center gap-2 border p-5"
+      (ngSubmit)="Update(name.value, age.value, email.value, phone.value, grade.value)"
+    >
+      <!--Student Name Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-user-alt" style="font-size: 23px"></i
+          ></span>
+        </div>
+        <input
+          #name
+          type="text"
+          class="form-control"
+          placeholder="Student Name"
+          value="{{student.name}}"
+          [ngClass]="{
+            'is-valid': name.value && name.value.length >= 3,
+            'is-invalid': !name.value || name.value.length < 3
+          }"
+        />
+      </div>
+
+      <!--Student Age Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-user-edit" style="font-size: 23px"></i
+          ></span>
+        </div>
+        <input
+          #age
+          type="number"
+          class="form-control"
+          placeholder="Student Age"
+          value="{{student.age}}"
+          [ngClass]="{
+            'is-valid': age.value && +age.value >= 20 && +age.value <= 40,
+            'is-invalid': +age.value < 20 || +age.value > 40
+          }"
+        />
+      </div>
+
+      <!--Student Email Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fa fa-envelope" style="font-size: 24px"></i
+          ></span>
+        </div>
+        <input
+          #email
+          type="email"
+          class="form-control"
+          placeholder="Student Email"
+          value="{{student.email}}"
+          [ngClass]="{
+            'is-valid': email.value,
+            'is-invalid': !email.value
+          }"
+        />
+      </div>
+
+      <!--Student Phone Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fa fa-phone" style="font-size:23px"></i
+          ></span>
+        </div>
+        <input
+          #phone
+          type="text"
+          class="form-control"
+          placeholder="Student Phone"
+          value="{{student.phone}}"
+          [ngClass]="{
+            'is-valid': phone.value && phone.value.length == 11,
+            'is-invalid': !phone.value || phone.value.length != 11
+          }"
+        />
+      </div>
+
+      <!--Student Grade Input-->
+      <div class="input-group flex-nowrap col-12">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-star" style="font-size: 23px"></i
+          ></span>
+        </div>
+        <select class="w-100" #grade>
+          <option value="{{student.grade}}" selected>{{student.grade}}</option>
+          <option value="Excellent">Excellent</option>
+          <option value="Very Good">Very Good</option>
+          <option value="Good">Good</option>
+        </select>
+      </div>
+
+      <div>
+        <input
+          type="submit"
+          class="form-control btn btn-secondary"
+          value="Update"
+        />
+      </div>
+    </form>
+  </div>
+</div>
+
+<ng-template #spinner>
+  <app-spinner></app-spinner>
+</ng-template>
+

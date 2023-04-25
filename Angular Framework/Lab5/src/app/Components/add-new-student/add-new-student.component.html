@@ -1,0 +1,157 @@
+<div class="d-flex justify-content-center">
+  <div class="col-10 col-md-5 col-lg-4">
+    <div
+      class="alert alert-success text-success p-0 pt-3 text-start px-3"
+      *ngIf="FormValid"
+    >
+      <p>Student has been Added Successfully!</p>
+    </div>
+    <div class="bg-success text-white fw-bold fs-4">Create New Student</div>
+    <form
+      class="form d-flex flex-column justify-content-center gap-2 border p-5"
+      (ngSubmit)="Add(name.value, age.value, email.value, phone.value, grade.value)"
+      [formGroup]="validationForm" method="post"
+    >
+      <!--Student Name Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-user-alt" style="font-size: 23px"></i
+          ></span>
+        </div>
+        <input
+          #name
+          type="text"
+          class="form-control"
+          placeholder="Student Name"
+          formControlName="studentName"
+          [ngClass]="{
+            'is-valid': name.value && name.value.length >= 3,
+            'is-invalid': !name.value || name.value.length < 3
+          }"
+        />
+      </div>
+      <!--Student Name Validation-->
+      <div
+        class="alert alert-danger text-danger p-0 pt-3 text-start px-3"
+        *ngIf="!StudentNameValid"
+      >
+        <p style="font-size: small;">
+          <i class="fa fa-close"></i> InValid Student Name *(Length Must be
+          Greater than 3)
+        </p>
+      </div>
+
+      <!--Student Age Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-user-edit" style="font-size: 23px"></i
+          ></span>
+        </div>
+        <input
+          #age
+          type="number"
+          class="form-control"
+          placeholder="Student Age"
+          formControlName="studentAge"
+          [ngClass]="{
+            'is-valid': age.value && +age.value >= 20 && +age.value <= 40,
+            'is-invalid': +age.value < 20 || +age.value > 40
+          }"
+        />
+      </div>
+      <!--Student Age Validation-->
+      <div
+        class="alert alert-danger text-danger p-0 pt-3 text-start px-3"
+        *ngIf="!StudentAgeValid"
+      >
+        <p style="font-size: small;">
+          <i class="fa fa-close"></i> InValid Student Age *(Allowed Range 20-40)
+        </p>
+      </div>
+
+      <!--Student Email Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fa fa-envelope" style="font-size: 24px"></i
+          ></span>
+        </div>
+        <input
+          #email
+          type="email"
+          class="form-control"
+          placeholder="Student Email"
+          formControlName="studentEmail"
+          [ngClass]="{
+            'is-valid': StudentEmailValid,
+            'is-invalid': !StudentEmailValid
+          }"
+        />
+      </div>
+      <!--Student Email Validation-->
+      <div
+        class="alert alert-danger text-danger p-0 pt-3 text-start px-3"
+        *ngIf="!StudentEmailValid"
+      >
+        <p style="font-size: small;">
+          <i class="fa fa-close"></i> InValid Student Email *(Email Must be Like
+          example@gmail.com)
+        </p>
+      </div>
+
+      <!--Student Phone Input-->
+      <div class="input-group flex-nowrap">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fa fa-phone" style="font-size:23px"></i
+          ></span>
+        </div>
+        <input
+          #phone
+          type="text"
+          class="form-control"
+          placeholder="Student Phone"
+          formControlName="studentPhone"
+          [ngClass]="{
+            'is-valid': phone.value && phone.value.length == 11,
+            'is-invalid': !phone.value || phone.value.length != 11
+          }"
+        />
+      </div>
+      <!--Student Phone Validation-->
+      <div
+        class="alert alert-danger text-danger p-0 pt-3 text-start px-3"
+        *ngIf="!StudentPhoneValid"
+      >
+        <p style="font-size: small;">
+          <i class="fa fa-close"></i> InValid Student Phone *(Length Must be
+          Equal to 11)
+        </p>
+      </div>
+
+      <!--Student Grade Input-->
+      <div class="input-group flex-nowrap col-12">
+        <div class="input-group-prepend">
+          <span class="input-group-text"
+            ><i class="fas fa-star" style="font-size: 23px"></i
+          ></span>
+        </div>
+        <select class="w-100" #grade>
+          <option value="Excellent">Excellent</option>
+          <option value="Very Good">Very Good</option>
+          <option value="Good">Good</option>
+        </select>
+      </div>
+
+      <div>
+        <input
+          type="submit"
+          class="form-control btn btn-success"
+          value="Create"
+        />
+      </div>
+    </form>
+  </div>
+</div>

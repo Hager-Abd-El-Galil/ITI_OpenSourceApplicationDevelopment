@@ -1,0 +1,32 @@
+<div *ngIf="Student;else spinner" class="card col-md-6 mx-auto">
+  <div class="d-flex">
+      <div class="col-md-6 border">
+          <img class="card-img-top rounded" src="./assets/Images/student.png"
+              alt="student image">
+      </div>
+      <div class="col-md-6 text-center border py-5">
+          <div class="The">
+              <div class="line"></div>
+              <h2 style="font-family: 'Brush Script MT', cursive; font-size:2.3rem"> Student </h2>
+          </div>
+          <h1>
+              {{Student.name}}
+          </h1>
+
+          <p>Age : {{Student.age}}</p>
+          <p>Email : {{Student.email}}</p>
+          <p>Phone : {{Student.phone}}</p>
+          <p>Grade : {{Student.grade}}</p>
+          
+          <div>
+            <span class="bg-light w-auto px-3 rounded-5" style="font-family: 'Brush Script MT', cursive;">
+              ID : {{Student.id}}
+            </span>  
+          </div>
+      </div>
+  </div>
+</div>
+
+<ng-template #spinner>
+  <app-spinner></app-spinner>
+</ng-template>

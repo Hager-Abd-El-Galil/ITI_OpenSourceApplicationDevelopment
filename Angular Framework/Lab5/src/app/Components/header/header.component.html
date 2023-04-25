@@ -1,0 +1,21 @@
+<div class="container-fluid bg-light">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <img src="./assets/Images/logo.png" width="60px" height="60px" />
+    </div>
+
+    <div class="d-flex gap-2 align-middle">
+      <a
+        class="btn btn-light"
+        routerLinkActive="text-success"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLink="/students">
+        ALL STUDENTS
+      </a>
+      <a class="btn btn-success text-white text-decoration-none" routerLink="/students/create">
+        <i class="fa fa-plus align-middle pe-2" style="font-size: 18px"></i>
+        Create New Student
+      </a>
+    </div>
+  </div>
+</div>

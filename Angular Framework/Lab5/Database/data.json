@@ -1,0 +1,60 @@
+{
+  "students": [
+    {
+      "name": "Menna",
+      "age": "26",
+      "email": "Menna@gmail.com",
+      "phone": "01004573312",
+      "grade": "Good",
+      "id": 2
+    },
+    {
+      "name": "Hana",
+      "age": "30",
+      "email": "Hana@gmail.com",
+      "phone": "01204113342",
+      "grade": "Excellent",
+      "id": 3
+    },
+    {
+      "name": "Amira",
+      "age": "23",
+      "email": "Amira@gmail.com",
+      "phone": "01014014512",
+      "grade": "Excellent",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "name": "Gamila",
+      "age": 25,
+      "email": "Ali@gmail.com",
+      "phone": "01224111741",
+      "grade": "Very Good"
+    },
+    {
+      "id": 7,
+      "name": "Nour",
+      "age": 25,
+      "email": "Nour@gmail.com",
+      "phone": "01101311569",
+      "grade": "Very Good"
+    },
+    {
+      "name": "Mayade",
+      "age": "26",
+      "email": "Mayada@gmail.com",
+      "phone": "01201245265",
+      "grade": "Very Good",
+      "id": 8
+    },
+    {
+      "name": "Amena",
+      "age": "30",
+      "email": "Amena@yahoo.com",
+      "phone": "01236428548",
+      "grade": "Excellent",
+      "id": 9
+    }
+  ]
+}
