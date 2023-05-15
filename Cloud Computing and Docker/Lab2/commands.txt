@@ -1,0 +1,15 @@
+sudo docker build -t newdockerapp .   
+sudo docker run -d -p 8082:80 --name new newdockerapp
+ 
+sudo docker login
+sudo docker tag newdockerapp hager99/docker-lab2:tagname
+sudo docker push hager99/docker-lab2:tagname
+
+sudo apt install git
+git remote add origin https://github.com/Hager-Abd-El-Galil/docker-lab2
+git add .
+git config --global user.email "hager.galil66@gmail.com"
+git config --global user.name "Hager Abd El Galil"
+git commit -m "Docker Lab2"
+git push -u orgin main
+
