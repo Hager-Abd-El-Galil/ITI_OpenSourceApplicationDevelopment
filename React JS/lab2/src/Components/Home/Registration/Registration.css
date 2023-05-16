@@ -1,0 +1,75 @@
+form {
+    border: solid thin #96c79e;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  input[type="text"], input[type="number"]{
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    border: solid thin #96c79e;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+
+  input:focus{
+    border: solid 2px #96c79e;
+    outline: none;
+  }
+  
+  #add {
+    border: none;
+    display: block;
+    position: relative;
+    padding: 0.7em 2.4em;
+    font-size: 18px;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    color: #96c79e;
+    z-index: 1;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+  }
+  
+  #add span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+    border: 3px solid #96c79e;
+  }
+  
+  #add span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 8%;
+    height: 500%;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-60deg);
+    transition: all 0.3s;
+  }
+  
+  #add:hover span::before {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 100%;
+    background: #96c79e;
+  }
+  
+  #add:hover {
+    color: white;
+  }
+  
+  button:active span::before {
+    background: #2751cd;
+  }
+  
+  
