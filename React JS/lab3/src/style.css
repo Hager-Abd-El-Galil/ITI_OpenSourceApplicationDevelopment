@@ -1,0 +1,15 @@
+.section{
+    height: 90vh;
+}
+a{
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+}
+
+.button{
+    padding: 10px 20px;
+}
+
+.text{
+    font-family: 'Dancing Script', cursive;
+}

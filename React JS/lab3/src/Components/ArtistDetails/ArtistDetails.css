@@ -1,0 +1,12 @@
+.artist-details{
+    background: url('https://img1.picmix.com/output/stamp/normal/9/9/0/3/1423099_9cdf8.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+.img {
+    width: 50px;
+    border-radius: 50%;
+  }
+  

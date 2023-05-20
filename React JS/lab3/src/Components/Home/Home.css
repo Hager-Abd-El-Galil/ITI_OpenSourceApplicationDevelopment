@@ -1,0 +1,37 @@
+.home-parent{
+    height: 90vh;
+    background: url('https://img1.picmix.com/output/stamp/normal/9/9/0/3/1423099_9cdf8.gif');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home-container{
+    margin-left: 25%;
+    width: 50%;
+}
+
+.home{
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:50vh;
+    border:solid 5px rgb(160, 104, 160);
+    border-radius:10px;
+}
+
+.home-text{
+    border-bottom: solid 5px rgb(160, 104, 160);
+    border-radius: 2px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.home-text:hover{
+    transition: all 0.2s ease;
+    border: solid 5px rgb(160, 104, 160);
+    padding: 1%;
+    border-radius: 5px;
+    color:#fff;
+}
+
