@@ -1,0 +1,24 @@
+{% extends 'main/base_layout.html' %}
+
+
+{% block main-content %}
+<div class="container d-flex flex-column justify-content-center align-items-center" style="height: 83vh;">
+  <h2 class="text-center fw-light"> Welcome to Book Details </h2>
+  <div class="d-flex justify-content-center mt-3 p-2">
+    <div class="card col-12 d-flex flex-column align-items-center">
+        <div class="card-body d-flex flex-column align-items-center">
+          <h5 class="card-title">Book Title: {{ book.title }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Book ID: {{ book.id }}</h6>
+          <p class="card-text fw-light">{{ book.description }}</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" {% if book.price > 1000 %} style="color:red" {% else %} style="color:green" {% endif %}>Price: {{ book.price }} EGP</li>
+        </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+
+

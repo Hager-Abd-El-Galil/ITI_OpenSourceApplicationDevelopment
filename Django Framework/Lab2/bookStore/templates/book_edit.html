@@ -1,0 +1,17 @@
+{% extends 'main/base_layout.html' %} {% block main-content %}
+
+<div class="d-flex align-items-center" style="height: 84vh">
+  <form
+    class="border p-3"
+    style="width: 30%; margin-left: 35%"
+    action="{% url 'book-update' book.id %}"
+    method="post"
+  >
+    {% csrf_token %}
+    <h2>Update Book</h2>
+    <div>{{ form.as_p }}</div>
+    <input type="submit" value="UPDATE" class="btn btn-primary"/>
+  </form>
+</div>
+
+{% endblock %}
