@@ -1,0 +1,11 @@
+{% extends 'main/base_layout.html' %} {% block main-content %}
+<div class="d-flex align-items-center" style="height: 84vh">
+  <form method="post" class="border p-3" style="width: 30%; margin-left: 35%">
+    {% csrf_token %}
+    <h2>Add New Book</h2>
+    <div>{{ form.as_p }}</div>
+    <input type="submit" value="ADD" class="btn btn-success align-end" />
+  </form>
+</div>
+
+{% endblock %}
