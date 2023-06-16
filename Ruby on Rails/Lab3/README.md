@@ -1,24 +1,7 @@
-# README
+# Lab3
+[![image](https://github.com/Hager-Abd-El-Galil/ITI_OpenSourceApplicationDevelopment/assets/81237428/dafcc63f-1d57-4286-a87a-3b0d67b33215)](https://github.com/Hager-Abd-El-Galil/ITI_OpenSourceApplicationDevelopment/assets/81237428/05355c95-cf66-4f42-a2a7-90815aac75f1)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
