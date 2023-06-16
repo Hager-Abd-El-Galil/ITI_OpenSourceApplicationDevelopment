@@ -1,0 +1,65 @@
+<style>
+    .book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 95vh;
+        font-family: 'calibri'
+    }
+
+    .book-details {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: solid thin #ddd;
+        margin-bottom: 2%;
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .book-info{
+        padding-right: 8%;
+    }
+
+    .book-info p {
+        margin-bottom: 10px;
+    }
+
+    button{
+        padding: 0.2%;
+        width: 8%;
+        border: solid thin #ddd;
+    }
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+</style>
+
+
+<div class="book">
+    <div class="book-details">
+        <div class="book-image">
+            <%= image_tag(@book.image, alt: "Book Image") %>
+        </div>
+        <div class="book-info">
+            <h1><%= @book.name %></h1>
+            <p><strong>Price:</strong> $<%= @book.price %></p>
+            <p><strong>Description:</strong> <%= @book.description %></p>
+            <p><strong>Created At:</strong> <%= @book.created_at %></p>
+            <p><strong>Updated At:</strong> <%= @book.updated_at %></p>
+        </div>
+    </div>
+    <button>
+    <%= link_to 'Back', books_path %>
+</button>
+</div>
+
+
+

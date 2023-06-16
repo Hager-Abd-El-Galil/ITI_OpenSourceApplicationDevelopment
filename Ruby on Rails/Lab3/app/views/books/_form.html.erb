@@ -1,0 +1,109 @@
+<style>
+  .form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'calibri';
+      width: 100%;
+      height: 80vh;
+  }
+
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    padding: 40px;
+    border-radius: 5px;
+  }
+
+  label{
+    font-weight: bold;
+  }
+
+  input{
+    height: 3.5vh;
+    width: 100%;
+    border: solid thin #ddd;
+  }
+
+  textarea{
+    height: 5vh;
+    width: 100%;
+    border: solid thin #ddd;
+  }
+
+  .form-field {
+    margin-bottom: 20px;
+    width: 200px;
+  }
+
+  .error-message {
+    color: red;
+    margin-top: 5px;
+  }
+
+  .form-actions {
+    margin-top: 10px;
+  }
+
+  button{
+    padding: 0.2%;
+    width: 8%;
+    border: solid thin #ddd;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+</style>
+
+<div class="form">
+  <%= form_with model: book do |form| %>
+  <div class="form-container">
+    <div class="form-field">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+      <% book.errors.full_messages_for(:name).each do |message| %>
+        <div class="error-message"> <%= message %> </div>
+      <% end %>
+    </div>
+
+    <div class="form-field">
+      <%= form.label :description %>
+      <%= form.text_area :description %>
+      <% book.errors.full_messages_for(:description).each do |message| %>
+        <div class="error-message"> <%= message %> </div>
+      <% end %>
+    </div>
+
+    <div class="form-field">
+      <%= form.label :price %>
+      <%= form.text_field :price %>
+      <% book.errors.full_messages_for(:price).each do |message| %>
+        <div class="error-message"> <%= message %> </div>
+      <% end %>
+    </div>
+
+    <div class="form-field">
+      <%= form.label  :image %>
+      <%= form.file_field :image %>
+      <% book.errors.full_messages_for(:image).each do |message| %>
+        <div class="error-message"> <%= message %> </div>
+      <% end %>
+    </div>
+
+    <div>
+      <%= form.submit %>
+    </div>
+  </div>
+  <% end %>
+
+  <button class="form-actions">
+    <%= link_to 'Back', books_path %>
+  </button>
+</div>
+

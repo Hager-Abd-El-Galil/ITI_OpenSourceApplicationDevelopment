@@ -1,0 +1,49 @@
+<style>
+  .user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    font-family: Arial, sans-serif;
+  }
+
+  .user-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .user-details p {
+    margin: 5px 0;
+    border: solid thin #ddd;
+    padding: 0 5%;
+  }
+
+  .user-details strong {
+    font-weight: bold;
+  }
+
+  button{
+    padding: 0.2%;
+    margin-top: 3%;
+    width: 8%;
+    border: solid thin #ddd;
+  }
+
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+</style>
+
+<div class="user-details">
+  <h1>User Details</h1>
+  <p><strong>Name:</strong> <%= @user.name %></p>
+  <p><strong>Email:</strong> <%= @user.email %></p>
+  <button class="form-actions">
+    <%= link_to 'Back', books_path %>
+  </button>
+</div>
+
+

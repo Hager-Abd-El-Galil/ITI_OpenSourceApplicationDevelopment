@@ -1,0 +1,86 @@
+<style>
+    *{
+        font-family: "calibri";
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    table {
+        width: 75%;
+        margin-left: 12.5%;
+        border-collapse: collapse;
+        border: solid thin #ddd;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 16.5px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    button{
+        border: solid thin #ddd;
+    }
+
+    .add-btn{
+        width: 10%;
+        padding: 0.5%;
+        margin-left: 45%;
+        margin-top: 2%;
+    }
+</style>
+
+<h1>BOOK STORE</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Created by</th>
+      <th>Created at</th>
+      <th>Updated at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.id %></td>
+        <td><%= book.name %></td>
+        <td><%= book.price %></td>
+        <td><%= book.description %></td>
+        <td><%= link_to book.user.name, user_path(book.user) %></td>
+        <td><%= book.created_at %></td>
+        <td><%= book.updated_at %></td>
+        <td>
+            <button><%= link_to "View", book %></button>
+            <button><%= link_to "Edit", edit_book_path(book) %></button>
+            <button>
+                <%= link_to "Delete", book_path(book), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure you want to delete this book?"
+                } %>
+            </button>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<button class="add-btn"><%= link_to "Add New Book", new_book_path %></button>
+
