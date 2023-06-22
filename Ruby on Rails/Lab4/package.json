@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "build:css": "sass ./app/assets/stylesheets/rails_admin.scss:./app/assets/builds/rails_admin.css --load-path=node_modules"
+  },
+  "dependencies": {
+    "flatpickr": "^4.6.13",
+    "rails_admin": "3.1.2",
+    "sass": "^1.63.4"
+  }
+}
